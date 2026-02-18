@@ -1,0 +1,22 @@
+2026-01-27 20:02:42 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-27 20:02:42 INFO  [ldk_node:232] Starting up LDK Node with node ID 02b0593e745af2b87619ec51a48e7a10869d838366e772f7242397e40ce454fa34 on network: testnet
+2026-01-27 20:02:42 ERROR [ldk_node::chain:771] Failed to retrieve fee rate estimates: Reqwest(reqwest::Error { kind: Request, url: Url { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("blockstream.info")), port: None, path: "/api/fee-estimates", query: None, fragment: None }, source: hyper::Error(Connect, ConnectError("dns error", Custom { kind: Uncategorized, error: "failed to lookup address information: Temporary failure in name resolution" })) })
+2026-01-27 20:03:45 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-27 20:03:45 INFO  [ldk_node:232] Starting up LDK Node with node ID 02b0593e745af2b87619ec51a48e7a10869d838366e772f7242397e40ce454fa34 on network: testnet
+2026-01-27 20:03:46 INFO  [ldk_node::chain:822] Fee rate cache update finished in 1319ms.
+2026-01-27 20:03:46 INFO  [ldk_node:634] Startup complete.
+2026-01-27 20:04:35 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-27 20:04:35 INFO  [ldk_node:232] Starting up LDK Node with node ID 02b0593e745af2b87619ec51a48e7a10869d838366e772f7242397e40ce454fa34 on network: testnet
+2026-01-27 20:04:36 INFO  [ldk_node::chain:822] Fee rate cache update finished in 1157ms.
+2026-01-27 20:04:36 INFO  [ldk_node:634] Startup complete.
+2026-01-27 20:04:36 INFO  [ldk_node:644] Shutting down LDK Node with node ID 02b0593e745af2b87619ec51a48e7a10869d838366e772f7242397e40ce454fa34...
+2026-01-27 20:04:36 INFO  [ldk_node:709] Shutdown complete.
+2026-01-27 20:09:07 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-27 20:09:07 INFO  [ldk_node:232] Starting up LDK Node with node ID 02b0593e745af2b87619ec51a48e7a10869d838366e772f7242397e40ce454fa34 on network: testnet
+2026-01-27 20:09:08 INFO  [ldk_node::chain:822] Fee rate cache update finished in 1205ms.
+2026-01-27 20:09:08 INFO  [ldk_node:634] Startup complete.
+2026-01-27 20:10:12 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb2500n1p5hjxaydpzf35kw6r5de5kueeq2pshxueqv93kxetnwvnp4q2c9j0n5ttetsasea3g6frn6zzrfmqurvmnh9aeyywt7gr8y2nargpp5xvfd4zpy5gw7m0ayjtqzxrfruyha0r0mw8n94df8aj6fsyxh64tqsp5qy5um0aw4pkhzpy9dvysstemgj4vy0g3we88k5lnm30t7rvwpqus9qyysgqcqpcxqzuyzl3nzfqhg0w0xvr78xvqcqjh6rza8ad9l6y0k3crumvzav4y56fssc36dxzv2r8drzt6ecaac2svg3269h0360xagpjvmmdksr2mazqpsle4am
+2026-01-27 20:10:17 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb2500n1p5hjxafdpzf35kw6r5de5kueeq2pshxueqv93kxetnwvnp4q2c9j0n5ttetsasea3g6frn6zzrfmqurvmnh9aeyywt7gr8y2nargpp52f9wgc7eahck3zqr4sgc0tgjtl8cmga6tfy6pfytnvu8cj7tupsqsp5wr2a378kmv89prq7xht6w449f9s3rdvst6ajaqx0lzu525m7qmeq9qyysgqcqpcxqzuyrdk25tsklxcqv8j9gfvzjwalvpdgrxsn6v0jfjfcwpewtkea8eyscwc8cqzy6u67s2ka7a7r4crnayeu8ucs22agjay2ap90l2w53ncpxfwel4
+2026-01-27 20:10:21 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb2500n1p5hjxaddpzf35kw6r5de5kueeq2pshxueqv93kxetnwvnp4q2c9j0n5ttetsasea3g6frn6zzrfmqurvmnh9aeyywt7gr8y2nargpp5k4wzmhhecql6wqtahf3yfjwv5shwsdpqzz4wvk20g7g4vwqhth6ssp5uapw85a04edxh2entuxy5gqt6932nrngqhpc793udsctf9kf0n5q9qyysgqcqpcxqzuya4ngcfkc52n8xwxwn0ja5lhdd0gyvt2zsudelqa3hnxj3ytgt9jhvhefudl9lsff97nv2c09j0tz9rsl220xzrkpjl5gt70y8aef0vqql43vpt
+2026-01-27 20:10:26 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb2500n1p5hjxajdpzf35kw6r5de5kueeq2pshxueqv93kxetnwvnp4q2c9j0n5ttetsasea3g6frn6zzrfmqurvmnh9aeyywt7gr8y2nargpp5wh9sed0e8283cjkxhlfpzy30kyxy3ycuhptjs6tkdvrxxut30qmssp5amxn2cc9a2v7f0e9u3v05xhxpup48u3suflsmjkqxz5w6mpctpus9qyysgqcqpcxqzuympg38zgz8gxtd75rd7dy4azm2qgy8zdwrls36wryvvfhmhy5cnjnmjzaa9pdjncptguax85ntk7ak0e4dpnsa0ggwrsq26rxm89pvnsqcc6r9q
+2026-01-27 20:10:43 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb2500n1p5hjx7rdpzf35kw6r5de5kueeq2pshxueqv93kxetnwvnp4q2c9j0n5ttetsasea3g6frn6zzrfmqurvmnh9aeyywt7gr8y2nargpp575lpum4py7ymfh8gdqvw7ssegm57vr4w4d69dxasq36w0hyk673ssp5zp9cm65hy2jma9d5dzvapkqzs07qk98jsselvaf0nkvthfgtx24q9qyysgqcqpcxqzuy6sm8rcmz39jxln0c092ccxuq35pzs4yqj55cm0pcx239mnmpky05azjggf5a6ug8rnvefpdtph5gj4haszpj7twkn96a3sjacfre7xcqtkh24a

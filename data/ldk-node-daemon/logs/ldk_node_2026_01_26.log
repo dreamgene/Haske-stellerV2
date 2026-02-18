@@ -1,0 +1,1020 @@
+2026-01-26 18:33:04 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-26 18:33:04 INFO  [ldk_node:232] Starting up LDK Node with node ID 03841ced533ed645c013f987cfe91fdac32f79c70bbc236623d3032b4f50da1702 on network: testnet
+2026-01-26 18:33:05 INFO  [ldk_node::chain:822] Fee rate cache update finished in 1360ms.
+2026-01-26 18:33:05 INFO  [ldk_node:634] Startup complete.
+2026-01-26 18:33:07 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 at height 4837384 provided via best_block_updated
+2026-01-26 18:33:07 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 2122ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:33:07 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2122ms.
+2026-01-26 18:33:08 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 802ms.
+2026-01-26 18:33:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 477ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:33:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 477ms.
+2026-01-26 18:34:05 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 324ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:34:05 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 324ms.
+2026-01-26 18:34:26 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1238ms.
+2026-01-26 18:34:36 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 899ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:34:36 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 899ms.
+2026-01-26 18:35:07 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 1717ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:35:07 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1718ms.
+2026-01-26 18:35:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 498ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:35:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 498ms.
+2026-01-26 18:35:45 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 430ms.
+2026-01-26 18:36:05 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 490ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:36:05 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 491ms.
+2026-01-26 18:36:19 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb2500n1p5h0dprdqv2pshjmt9de6qnp4qwzpem2n8mtytsqnlxrul6glmtpj77w8pw7zxe3r6vpjkn6smgtsypp56hf49aezglja63e7qey9mff58sjd5t26vky7f67t6xdjjs5a0ggssp5wqtfznlhvepq9lpsyevq2u5j30y2w22kznagmyc5ycm3hm52knms9qyysgqcqpcxqzuyshaut9t33cekz0q3x0f6ue2mx58ycnhp7g7gu03h3yvv4tcsm8px875m68ppf9pxnzaa3k4g7cqlft4mqmf92rax8qleudhms2w94jgqm9gfks
+2026-01-26 18:36:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 335ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:36:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 335ms.
+2026-01-26 18:36:59 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb20p1p5h0dztdqv2pshjmt9de6qnp4qwzpem2n8mtytsqnlxrul6glmtpj77w8pw7zxe3r6vpjkn6smgtsypp5acwwwp3wsdh959gad8v4cpy0ejyh0ea0dv9tm8zv3xyrrzj760cqsp5js492mnl2m5gdajxwr93crmsq0ev087rvz89y0757407kr8jzd4s9qyysgqcqpcxqzuyruchskxhuau084qs3majx2aayjrpy0z88j74rftvzj66v8j28g8804t3f2tkn7kj05ykuudemdtc835qz050fh5rykeftnt5exz5s5qqlfnf9g
+2026-01-26 18:37:05 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 392ms.
+2026-01-26 18:37:07 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 1624ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:37:07 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1624ms.
+2026-01-26 18:37:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 438ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:37:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 439ms.
+2026-01-26 18:38:06 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 909ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:38:06 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 909ms.
+2026-01-26 18:38:26 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1070ms.
+2026-01-26 18:38:36 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 625ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:38:36 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 625ms.
+2026-01-26 18:39:06 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 611ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:39:06 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 611ms.
+2026-01-26 18:39:36 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000b9e97b20bc7a85554ec664daefbc45dc32bc1682bd3df9e397 in 769ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:39:36 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 769ms.
+2026-01-26 18:39:45 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 413ms.
+2026-01-26 18:40:08 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000018288351c3358aceaa5284616b2752115719baa4914e1ceb77e at height 4837385 provided via best_block_updated
+2026-01-26 18:40:09 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018288351c3358aceaa5284616b2752115719baa4914e1ceb77e in 3832ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:40:09 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 3832ms.
+2026-01-26 18:40:18 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb10p1p5h0dgjdqv2pshjmt9de6qnp4qwzpem2n8mtytsqnlxrul6glmtpj77w8pw7zxe3r6vpjkn6smgtsypp52hp95enhsfkfrpns0yf4y455vgauqrl0pywfumnlkpd08580wxxqsp5nx2va56c5uhft9vdxkcsn06dxt4vekvunqxdacznk7s9es7ukcdq9qyysgqcqpcxqzuyn5fxmf77rqsqyp5npgq7v6mg8a8v0h4e82ctxu35aea5k5v2et352pqz6vecdpfqwkunuyw22xhdzt9a95t2rj3uudy8x4azp5e2wscq3ftasl
+2026-01-26 18:40:38 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018288351c3358aceaa5284616b2752115719baa4914e1ceb77e in 2712ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:40:38 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2713ms.
+2026-01-26 18:41:05 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 360ms.
+2026-01-26 18:41:06 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018288351c3358aceaa5284616b2752115719baa4914e1ceb77e in 496ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:41:06 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 497ms.
+2026-01-26 18:41:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018288351c3358aceaa5284616b2752115719baa4914e1ceb77e in 342ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:41:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 342ms.
+2026-01-26 18:42:07 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000000ca17d8fa11ada29499424d92e6054816a1739695be39425aaf at height 4837386 provided via best_block_updated
+2026-01-26 18:42:08 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000ca17d8fa11ada29499424d92e6054816a1739695be39425aaf in 2637ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:42:08 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2637ms.
+2026-01-26 18:42:26 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 687ms.
+2026-01-26 18:42:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000ca17d8fa11ada29499424d92e6054816a1739695be39425aaf in 480ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:42:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 481ms.
+2026-01-26 18:43:06 INFO  [ldk_node::chain:822] Fee rate cache update finished in 874ms.
+2026-01-26 18:43:08 DEBUG [lightning::chain::chainmonitor:718] New best block 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 at height 4837387 provided via best_block_updated
+2026-01-26 18:43:08 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 2551ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:43:08 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2551ms.
+2026-01-26 18:43:36 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 1191ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:43:36 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1192ms.
+2026-01-26 18:43:45 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 454ms.
+2026-01-26 18:44:06 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 595ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:44:06 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 595ms.
+2026-01-26 18:44:36 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 600ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:44:36 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 601ms.
+2026-01-26 18:45:05 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 490ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:45:05 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 490ms.
+2026-01-26 18:45:06 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 836ms.
+2026-01-26 18:45:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 395ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:45:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 395ms.
+2026-01-26 18:46:05 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 362ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:46:05 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 362ms.
+2026-01-26 18:46:26 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 689ms.
+2026-01-26 18:46:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 346ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:46:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 346ms.
+2026-01-26 18:47:06 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 1220ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:47:06 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1220ms.
+2026-01-26 18:47:36 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 634ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:47:36 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 634ms.
+2026-01-26 18:47:45 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 401ms.
+2026-01-26 18:48:05 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 414ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:48:05 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 415ms.
+2026-01-26 18:48:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000059c7158113772b335ed02c539c41d5f4f0b83ad395f90fac86 in 429ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:48:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 430ms.
+2026-01-26 18:49:05 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 533ms.
+2026-01-26 18:49:07 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f at height 4837388 provided via best_block_updated
+2026-01-26 18:49:08 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 2024ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:49:08 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2024ms.
+2026-01-26 18:49:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 415ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:49:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 415ms.
+2026-01-26 18:50:08 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 3485ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:50:08 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 3486ms.
+2026-01-26 18:50:25 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 384ms.
+2026-01-26 18:50:35 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 416ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:50:35 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 416ms.
+2026-01-26 18:51:05 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 420ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:51:05 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 420ms.
+2026-01-26 18:58:12 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 18:58:23 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1329ms.
+2026-01-26 18:58:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 325ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:58:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 326ms.
+2026-01-26 18:59:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 370ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:59:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 370ms.
+2026-01-26 18:59:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 373ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 18:59:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 374ms.
+2026-01-26 18:59:42 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 400ms.
+2026-01-26 18:59:43 INFO  [ldk_node::chain:822] Fee rate cache update finished in 474ms.
+2026-01-26 19:00:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 327ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:00:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 327ms.
+2026-01-26 19:00:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 384ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:00:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 384ms.
+2026-01-26 19:01:02 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 355ms.
+2026-01-26 19:01:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 386ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:01:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 386ms.
+2026-01-26 19:01:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 392ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:01:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 392ms.
+2026-01-26 19:02:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 424ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:02:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 424ms.
+2026-01-26 19:02:22 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 413ms.
+2026-01-26 19:02:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 690ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:02:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 690ms.
+2026-01-26 19:03:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 321ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:03:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 321ms.
+2026-01-26 19:03:42 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 406ms.
+2026-01-26 19:03:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 394ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:03:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 394ms.
+2026-01-26 19:04:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 325ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:04:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 329ms.
+2026-01-26 19:04:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 400ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:04:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 400ms.
+2026-01-26 19:05:02 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 337ms.
+2026-01-26 19:05:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 389ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:05:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 389ms.
+2026-01-26 19:05:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 337ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:05:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 337ms.
+2026-01-26 19:06:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 524ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:06:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 525ms.
+2026-01-26 19:06:22 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 355ms.
+2026-01-26 19:06:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 356ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:06:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 356ms.
+2026-01-26 19:07:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001aca764282e9c77ea979273f99af7b0528bacfd425e5054c43f in 310ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:07:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 314ms.
+2026-01-26 19:10:15 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 19:10:15 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 19:10:38 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000001cdd3d7a8e67c960d064f3b12f34107e341fe9a16f12699293 at height 4837390 provided via best_block_updated
+2026-01-26 19:10:38 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000001cdd3d7a8e67c960d064f3b12f34107e341fe9a16f12699293 in 3420ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:10:38 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 3421ms.
+2026-01-26 19:25:08 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-26 19:25:08 INFO  [ldk_node:232] Starting up LDK Node with node ID 03841ced533ed645c013f987cfe91fdac32f79c70bbc236623d3032b4f50da1702 on network: testnet
+2026-01-26 19:25:09 INFO  [ldk_node::chain:822] Fee rate cache update finished in 1057ms.
+2026-01-26 19:25:09 INFO  [ldk_node:634] Startup complete.
+2026-01-26 19:25:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 513ms.
+2026-01-26 19:25:11 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000004c19265d07a736083bcf7ee3ec83a55125d64a38c16354f2b8 at height 4837393 provided via best_block_updated
+2026-01-26 19:25:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000004c19265d07a736083bcf7ee3ec83a55125d64a38c16354f2b8 in 1697ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:25:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1697ms.
+2026-01-26 19:25:41 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 at height 4837394 provided via best_block_updated
+2026-01-26 19:25:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 1708ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:25:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1708ms.
+2026-01-26 19:26:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 382ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:26:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 382ms.
+2026-01-26 19:26:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 454ms.
+2026-01-26 19:26:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 383ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:26:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 384ms.
+2026-01-26 19:26:50 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb10p1p5h00l6dqv2pshjmt9de6qnp4qwzpem2n8mtytsqnlxrul6glmtpj77w8pw7zxe3r6vpjkn6smgtsypp5sx7qe5fe9zd83sppyhgy7qsqe7zk3eyve2ztd0uk0q867e0zhhessp58nv0jc46cftaraed3rlvrxj02pckv2hlsajvk2m055hgs7zph64q9qyysgqcqpcxqzuyqkepdume37ga0k07z67f4q8c25laemecg7unvuhl8nhkz8zf8gep4gpl0slnwfxn6278el888a5zqv220zsu2mn9mz3tm6ya2qdterqq8qnmdg
+2026-01-26 19:27:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 429ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:27:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 429ms.
+2026-01-26 19:27:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 324ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:27:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 324ms.
+2026-01-26 19:27:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 286ms.
+2026-01-26 19:28:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 274ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:28:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 274ms.
+2026-01-26 19:28:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 293ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:28:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 293ms.
+2026-01-26 19:29:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 332ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:29:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 335ms.
+2026-01-26 19:29:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 311ms.
+2026-01-26 19:29:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 276ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:29:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 276ms.
+2026-01-26 19:30:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 273ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:30:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 273ms.
+2026-01-26 19:30:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 297ms.
+2026-01-26 19:30:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 3410ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:30:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 3410ms.
+2026-01-26 19:31:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 289ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:31:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 289ms.
+2026-01-26 19:31:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 349ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:31:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 361ms.
+2026-01-26 19:31:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 511ms.
+2026-01-26 19:32:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 374ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:32:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 375ms.
+2026-01-26 19:32:49 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 19:33:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 287ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:33:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 287ms.
+2026-01-26 19:33:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 394ms.
+2026-01-26 19:33:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 273ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:33:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 274ms.
+2026-01-26 19:34:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 393ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:34:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 393ms.
+2026-01-26 19:34:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 282ms.
+2026-01-26 19:34:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 297ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:34:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 297ms.
+2026-01-26 19:35:10 INFO  [ldk_node::chain:822] Fee rate cache update finished in 398ms.
+2026-01-26 19:35:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001562f21aece5a4f555ef4a7b4268ca219a396733d841e5d62e6 in 394ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:35:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 394ms.
+2026-01-26 19:35:41 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 at height 4837395 provided via best_block_updated
+2026-01-26 19:35:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 2140ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:35:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2140ms.
+2026-01-26 19:35:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 359ms.
+2026-01-26 19:36:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 328ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:36:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 329ms.
+2026-01-26 19:36:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 330ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:36:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 330ms.
+2026-01-26 19:37:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 335ms.
+2026-01-26 19:37:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 270ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:37:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 270ms.
+2026-01-26 19:37:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 308ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:37:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 309ms.
+2026-01-26 19:38:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 2370ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:38:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2370ms.
+2026-01-26 19:38:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 322ms.
+2026-01-26 19:38:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 293ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:38:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 293ms.
+2026-01-26 19:39:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 376ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:39:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 377ms.
+2026-01-26 19:39:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 332ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:39:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 333ms.
+2026-01-26 19:39:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 293ms.
+2026-01-26 19:40:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 301ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:40:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 301ms.
+2026-01-26 19:40:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 338ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:40:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 338ms.
+2026-01-26 19:41:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 292ms.
+2026-01-26 19:41:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 288ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:41:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 288ms.
+2026-01-26 19:41:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 288ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:41:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 292ms.
+2026-01-26 19:42:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 355ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:42:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 356ms.
+2026-01-26 19:42:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 336ms.
+2026-01-26 19:42:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 404ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:42:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 404ms.
+2026-01-26 19:43:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 366ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:43:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 367ms.
+2026-01-26 19:43:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 803ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:43:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 805ms.
+2026-01-26 19:43:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 409ms.
+2026-01-26 19:44:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002b349ce8799b073c7493b3f20d23bff150f60919622697d2d9 in 1406ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:44:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1406ms.
+2026-01-26 19:44:41 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000001e7213a87be3ea5d54c98f2cbf672885b04d6636d0624e84094 at height 4837396 provided via best_block_updated
+2026-01-26 19:44:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e7213a87be3ea5d54c98f2cbf672885b04d6636d0624e84094 in 2022ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:44:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2022ms.
+2026-01-26 19:45:10 INFO  [ldk_node::chain:822] Fee rate cache update finished in 389ms.
+2026-01-26 19:45:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e7213a87be3ea5d54c98f2cbf672885b04d6636d0624e84094 in 334ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:45:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 334ms.
+2026-01-26 19:45:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 456ms.
+2026-01-26 19:45:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e7213a87be3ea5d54c98f2cbf672885b04d6636d0624e84094 in 496ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:45:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 496ms.
+2026-01-26 19:46:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e7213a87be3ea5d54c98f2cbf672885b04d6636d0624e84094 in 295ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:46:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 295ms.
+2026-01-26 19:46:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 391ms.
+2026-01-26 19:46:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e7213a87be3ea5d54c98f2cbf672885b04d6636d0624e84094 in 430ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:46:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 435ms.
+2026-01-26 19:47:11 DEBUG [lightning::chain::chainmonitor:718] New best block 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 at height 4837397 provided via best_block_updated
+2026-01-26 19:47:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 1646ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:47:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1646ms.
+2026-01-26 19:47:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 280ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:47:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 281ms.
+2026-01-26 19:47:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 342ms.
+2026-01-26 19:48:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 289ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:48:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 289ms.
+2026-01-26 19:48:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 291ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:48:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 292ms.
+2026-01-26 19:49:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 273ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:49:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 273ms.
+2026-01-26 19:49:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 456ms.
+2026-01-26 19:49:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 276ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:49:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 276ms.
+2026-01-26 19:50:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 341ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:50:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 341ms.
+2026-01-26 19:50:29 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 265ms.
+2026-01-26 19:50:39 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 271ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:50:39 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 271ms.
+2026-01-26 19:51:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 340ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:51:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 341ms.
+2026-01-26 19:51:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 349ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:51:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 350ms.
+2026-01-26 19:51:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 287ms.
+2026-01-26 19:52:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 358ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:52:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 358ms.
+2026-01-26 19:52:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 353ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:52:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 354ms.
+2026-01-26 19:53:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 283ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:53:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 283ms.
+2026-01-26 19:53:11 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1895ms.
+2026-01-26 19:53:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 2296ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:53:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2296ms.
+2026-01-26 19:54:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 298ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:54:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 299ms.
+2026-01-26 19:54:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 618ms.
+2026-01-26 19:54:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 282ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:54:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 282ms.
+2026-01-26 19:55:10 INFO  [ldk_node::chain:822] Fee rate cache update finished in 313ms.
+2026-01-26 19:55:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 307ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:55:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 307ms.
+2026-01-26 19:55:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 449ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:55:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 449ms.
+2026-01-26 19:55:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 528ms.
+2026-01-26 19:56:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 1719ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:56:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1719ms.
+2026-01-26 19:56:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 277ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:56:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 280ms.
+2026-01-26 19:57:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 509ms.
+2026-01-26 19:57:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 307ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:57:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 307ms.
+2026-01-26 19:57:49 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 19:58:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 334ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:58:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 334ms.
+2026-01-26 19:58:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 321ms.
+2026-01-26 19:58:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 285ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:58:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 285ms.
+2026-01-26 19:59:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 325ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:59:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 325ms.
+2026-01-26 19:59:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 307ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 19:59:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 307ms.
+2026-01-26 19:59:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 304ms.
+2026-01-26 20:00:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 320ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:00:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 321ms.
+2026-01-26 20:00:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 279ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:00:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 279ms.
+2026-01-26 20:01:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 291ms.
+2026-01-26 20:01:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 293ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:01:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 294ms.
+2026-01-26 20:01:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 328ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:01:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 328ms.
+2026-01-26 20:02:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 286ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:02:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 288ms.
+2026-01-26 20:02:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 293ms.
+2026-01-26 20:02:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 359ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:02:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 359ms.
+2026-01-26 20:03:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 294ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:03:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 294ms.
+2026-01-26 20:03:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 277ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:03:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 277ms.
+2026-01-26 20:03:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 297ms.
+2026-01-26 20:04:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 448ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:04:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 449ms.
+2026-01-26 20:04:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 275ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:04:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 275ms.
+2026-01-26 20:05:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 310ms.
+2026-01-26 20:05:10 INFO  [ldk_node::chain:822] Fee rate cache update finished in 368ms.
+2026-01-26 20:05:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 287ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:05:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 287ms.
+2026-01-26 20:05:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 296ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:05:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 296ms.
+2026-01-26 20:06:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 338ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:06:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 338ms.
+2026-01-26 20:06:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 327ms.
+2026-01-26 20:06:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000027149b73ab62f99db0a733bc731e3821ce524b454013ca6bf9 in 299ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:06:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 300ms.
+2026-01-26 20:07:11 DEBUG [lightning::chain::chainmonitor:718] New best block 000000001844e05d8a9de62960bb80af96950aa3a1962235c884abeaa24890a7 at height 4837398 provided via best_block_updated
+2026-01-26 20:07:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000001844e05d8a9de62960bb80af96950aa3a1962235c884abeaa24890a7 in 1874ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:07:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1875ms.
+2026-01-26 20:07:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000001844e05d8a9de62960bb80af96950aa3a1962235c884abeaa24890a7 in 351ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:07:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 352ms.
+2026-01-26 20:07:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 418ms.
+2026-01-26 20:08:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000001844e05d8a9de62960bb80af96950aa3a1962235c884abeaa24890a7 in 275ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:08:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 275ms.
+2026-01-26 20:08:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000001844e05d8a9de62960bb80af96950aa3a1962235c884abeaa24890a7 in 456ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:08:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 457ms.
+2026-01-26 20:09:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 381ms.
+2026-01-26 20:09:11 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000015e0e448bdc1ab2649f2d29c0f647c31596ecd8d49001aa8e55 at height 4837399 provided via best_block_updated
+2026-01-26 20:09:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000015e0e448bdc1ab2649f2d29c0f647c31596ecd8d49001aa8e55 in 1894ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:09:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1894ms.
+2026-01-26 20:09:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000015e0e448bdc1ab2649f2d29c0f647c31596ecd8d49001aa8e55 in 361ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:09:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 361ms.
+2026-01-26 20:10:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000015e0e448bdc1ab2649f2d29c0f647c31596ecd8d49001aa8e55 in 365ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:10:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 366ms.
+2026-01-26 20:10:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 280ms.
+2026-01-26 20:10:49 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 20:11:18 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 at height 4837400 provided via best_block_updated
+2026-01-26 20:11:18 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 9185ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:11:18 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 9186ms.
+2026-01-26 20:11:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 272ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:11:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 272ms.
+2026-01-26 20:11:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 308ms.
+2026-01-26 20:12:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 293ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:12:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 293ms.
+2026-01-26 20:12:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 272ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:12:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 272ms.
+2026-01-26 20:13:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 287ms.
+2026-01-26 20:13:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 291ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:13:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 293ms.
+2026-01-26 20:13:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 302ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:13:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 303ms.
+2026-01-26 20:14:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 1775ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:14:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1775ms.
+2026-01-26 20:14:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 277ms.
+2026-01-26 20:14:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 295ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:14:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 295ms.
+2026-01-26 20:15:12 INFO  [ldk_node::chain:822] Fee rate cache update finished in 3119ms.
+2026-01-26 20:15:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 295ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:15:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 296ms.
+2026-01-26 20:15:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 305ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:15:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 306ms.
+2026-01-26 20:15:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 347ms.
+2026-01-26 20:16:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 287ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:16:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 288ms.
+2026-01-26 20:16:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 283ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:16:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 284ms.
+2026-01-26 20:17:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 323ms.
+2026-01-26 20:17:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 284ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:17:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 284ms.
+2026-01-26 20:17:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000018638e4d02a019dd1fb8d84623dffe61c07900c437b1b46e533 in 377ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:17:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 377ms.
+2026-01-26 20:18:11 DEBUG [lightning::chain::chainmonitor:718] New best block 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 at height 4837401 provided via best_block_updated
+2026-01-26 20:18:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 1896ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:18:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1896ms.
+2026-01-26 20:18:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 320ms.
+2026-01-26 20:18:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 327ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:18:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 328ms.
+2026-01-26 20:19:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 332ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:19:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 335ms.
+2026-01-26 20:19:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 281ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:19:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 281ms.
+2026-01-26 20:19:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 371ms.
+2026-01-26 20:20:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 338ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:20:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 339ms.
+2026-01-26 20:20:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 342ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:20:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 342ms.
+2026-01-26 20:21:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 276ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:21:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 276ms.
+2026-01-26 20:21:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 286ms.
+2026-01-26 20:21:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 276ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:21:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 276ms.
+2026-01-26 20:22:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 351ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:22:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 351ms.
+2026-01-26 20:22:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 325ms.
+2026-01-26 20:22:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 419ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:22:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 420ms.
+2026-01-26 20:23:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 278ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:23:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 278ms.
+2026-01-26 20:23:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 375ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:23:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 375ms.
+2026-01-26 20:23:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 403ms.
+2026-01-26 20:24:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 424ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:24:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 425ms.
+2026-01-26 20:24:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 375ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:24:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 376ms.
+2026-01-26 20:25:10 INFO  [ldk_node::chain:822] Fee rate cache update finished in 449ms.
+2026-01-26 20:25:11 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 911ms.
+2026-01-26 20:25:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 284ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:25:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 284ms.
+2026-01-26 20:25:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 290ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:25:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 291ms.
+2026-01-26 20:26:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 319ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:26:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 324ms.
+2026-01-26 20:26:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 285ms.
+2026-01-26 20:26:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 388ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:26:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 388ms.
+2026-01-26 20:27:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 280ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:27:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 281ms.
+2026-01-26 20:27:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 302ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:27:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 303ms.
+2026-01-26 20:27:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 275ms.
+2026-01-26 20:28:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 277ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:28:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 277ms.
+2026-01-26 20:28:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 299ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:28:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 299ms.
+2026-01-26 20:29:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 332ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:29:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 332ms.
+2026-01-26 20:29:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 290ms.
+2026-01-26 20:29:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 308ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:29:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 310ms.
+2026-01-26 20:30:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000047c803aa88f5b0917a031b5ac315b8c1bfefde2e3789770379 in 293ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:30:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 293ms.
+2026-01-26 20:30:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 400ms.
+2026-01-26 20:30:40 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 at height 4837402 provided via best_block_updated
+2026-01-26 20:30:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 1543ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:30:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1543ms.
+2026-01-26 20:31:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 318ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:31:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 318ms.
+2026-01-26 20:31:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 324ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:31:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 325ms.
+2026-01-26 20:31:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 394ms.
+2026-01-26 20:32:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 529ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:32:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 529ms.
+2026-01-26 20:32:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 293ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:32:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 293ms.
+2026-01-26 20:33:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 303ms.
+2026-01-26 20:33:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 307ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:33:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 308ms.
+2026-01-26 20:33:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 275ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:33:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 276ms.
+2026-01-26 20:34:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 275ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:34:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 275ms.
+2026-01-26 20:34:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 315ms.
+2026-01-26 20:34:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 290ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:34:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 290ms.
+2026-01-26 20:35:10 INFO  [ldk_node::chain:822] Fee rate cache update finished in 280ms.
+2026-01-26 20:35:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 311ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:35:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 311ms.
+2026-01-26 20:35:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 277ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:35:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 278ms.
+2026-01-26 20:35:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 843ms.
+2026-01-26 20:36:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 343ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:36:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 351ms.
+2026-01-26 20:36:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e79d8f071b27f0d08584ba19c89a4f8b20e8e542445798c4e4 in 298ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:36:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 299ms.
+2026-01-26 20:37:10 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000002eab9fccd189fe7c5099c1cac7408a27d8b19c6a67d10825e7 at height 4837403 provided via best_block_updated
+2026-01-26 20:37:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002eab9fccd189fe7c5099c1cac7408a27d8b19c6a67d10825e7 in 1562ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:37:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1566ms.
+2026-01-26 20:37:11 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 321ms.
+2026-01-26 20:37:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002eab9fccd189fe7c5099c1cac7408a27d8b19c6a67d10825e7 in 298ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:37:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 299ms.
+2026-01-26 20:38:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002eab9fccd189fe7c5099c1cac7408a27d8b19c6a67d10825e7 in 348ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:38:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 348ms.
+2026-01-26 20:38:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 533ms.
+2026-01-26 20:38:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000002eab9fccd189fe7c5099c1cac7408a27d8b19c6a67d10825e7 in 277ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:38:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 277ms.
+2026-01-26 20:39:11 DEBUG [lightning::chain::chainmonitor:718] New best block 0000000000000164b931b3f0986c29d7457a41dc48fa853f03e050844c67269c at height 4837404 provided via best_block_updated
+2026-01-26 20:39:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000164b931b3f0986c29d7457a41dc48fa853f03e050844c67269c in 1684ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:39:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1684ms.
+2026-01-26 20:39:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000164b931b3f0986c29d7457a41dc48fa853f03e050844c67269c in 355ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:39:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 355ms.
+2026-01-26 20:39:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 296ms.
+2026-01-26 20:40:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000164b931b3f0986c29d7457a41dc48fa853f03e050844c67269c in 362ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:40:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 362ms.
+2026-01-26 20:40:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000164b931b3f0986c29d7457a41dc48fa853f03e050844c67269c in 370ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:40:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 370ms.
+2026-01-26 20:41:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000164b931b3f0986c29d7457a41dc48fa853f03e050844c67269c in 362ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:41:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 363ms.
+2026-01-26 20:41:10 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 289ms.
+2026-01-26 20:41:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000164b931b3f0986c29d7457a41dc48fa853f03e050844c67269c in 365ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:41:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 365ms.
+2026-01-26 20:42:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000164b931b3f0986c29d7457a41dc48fa853f03e050844c67269c in 415ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:42:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 415ms.
+2026-01-26 20:42:30 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 324ms.
+2026-01-26 20:42:41 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000001e4c0c0fef7273d584660a2f3788e5640d22b89efa16008cede at height 4837405 provided via best_block_updated
+2026-01-26 20:42:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e4c0c0fef7273d584660a2f3788e5640d22b89efa16008cede in 1672ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:42:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1673ms.
+2026-01-26 20:43:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e4c0c0fef7273d584660a2f3788e5640d22b89efa16008cede in 375ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:43:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 375ms.
+2026-01-26 20:43:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e4c0c0fef7273d584660a2f3788e5640d22b89efa16008cede in 281ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:43:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 281ms.
+2026-01-26 20:43:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 312ms.
+2026-01-26 20:44:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e4c0c0fef7273d584660a2f3788e5640d22b89efa16008cede in 428ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:44:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 428ms.
+2026-01-26 20:44:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001e4c0c0fef7273d584660a2f3788e5640d22b89efa16008cede in 283ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:44:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 283ms.
+2026-01-26 20:45:12 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000007421eed36d3c406da19c9d126d6bf4dd16ae8b6f01cc2cd6c2 at height 4837406 provided via best_block_updated
+2026-01-26 20:45:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000007421eed36d3c406da19c9d126d6bf4dd16ae8b6f01cc2cd6c2 in 3174ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:45:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 3175ms.
+2026-01-26 20:45:13 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 349ms.
+2026-01-26 20:45:14 INFO  [ldk_node::chain:822] Fee rate cache update finished in 1638ms.
+2026-01-26 20:45:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000007421eed36d3c406da19c9d126d6bf4dd16ae8b6f01cc2cd6c2 in 276ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:45:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 276ms.
+2026-01-26 20:46:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000007421eed36d3c406da19c9d126d6bf4dd16ae8b6f01cc2cd6c2 in 275ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:46:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 275ms.
+2026-01-26 20:46:31 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1714ms.
+2026-01-26 20:46:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000007421eed36d3c406da19c9d126d6bf4dd16ae8b6f01cc2cd6c2 in 279ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:46:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 279ms.
+2026-01-26 20:47:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000007421eed36d3c406da19c9d126d6bf4dd16ae8b6f01cc2cd6c2 in 295ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:47:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 296ms.
+2026-01-26 20:47:40 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000007421eed36d3c406da19c9d126d6bf4dd16ae8b6f01cc2cd6c2 in 299ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:47:40 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 299ms.
+2026-01-26 20:47:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1053ms.
+2026-01-26 20:48:10 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000007421eed36d3c406da19c9d126d6bf4dd16ae8b6f01cc2cd6c2 in 303ms: 0 confirmed, 0 unconfirmed.
+2026-01-26 20:48:10 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 303ms.
+2026-01-26 21:25:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:25:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:26:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:26:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:26:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:27:16 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:27:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:27:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:28:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:28:36 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:28:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:29:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:29:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:30:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:30:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:30:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:31:16 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:31:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:31:51 ERROR [ldk_node::chain:767] Updating fee rate estimates timed out: deadline has elapsed
+2026-01-26 21:32:01 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:32:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:32:36 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:32:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:33:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:33:56 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:34:06 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:34:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:34:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:35:16 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:35:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:35:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:36:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:36:36 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:36:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:37:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:37:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:38:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:38:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:38:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:39:16 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:39:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:39:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:40:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:40:36 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:40:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:41:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:41:56 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:42:06 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:42:11 ERROR [ldk_node::chain:767] Updating fee rate estimates timed out: deadline has elapsed
+2026-01-26 21:42:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:42:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:43:16 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:43:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:43:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:44:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:44:36 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-26 21:44:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:45:26 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:45:56 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:46:03 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:46:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:46:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:47:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:47:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:47:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:48:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:48:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:48:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:49:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:49:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:49:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:50:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:50:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:51:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:51:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:51:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:51:46 ERROR [ldk_node::chain:771] Failed to retrieve fee rate estimates: Reqwest(reqwest::Error { kind: Request, url: Url { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("blockstream.info")), port: None, path: "/testnet/api/fee-estimates", query: None, fragment: None }, source: hyper::Error(Connect, ConnectError("dns error", Custom { kind: Uncategorized, error: "failed to lookup address information: Temporary failure in name resolution" })) })
+2026-01-26 21:52:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:52:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:52:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:53:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:53:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:53:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:54:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:54:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:55:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:55:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:55:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:56:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:56:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:56:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:57:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:57:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:57:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:58:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:58:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:59:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 21:59:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 21:59:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:00:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:00:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:00:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:01:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:01:46 ERROR [ldk_node::chain:771] Failed to retrieve fee rate estimates: Reqwest(reqwest::Error { kind: Request, url: Url { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("blockstream.info")), port: None, path: "/testnet/api/fee-estimates", query: None, fragment: None }, source: hyper::Error(Connect, ConnectError("dns error", Custom { kind: Uncategorized, error: "failed to lookup address information: Temporary failure in name resolution" })) })
+2026-01-26 22:01:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:01:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:02:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:02:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:03:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:03:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:03:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:04:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:04:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:04:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:05:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:05:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:05:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:06:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:06:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:07:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:07:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:07:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:08:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:08:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:08:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:09:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:09:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:09:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:10:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:10:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:11:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:11:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:11:46 ERROR [ldk_node::chain:771] Failed to retrieve fee rate estimates: Reqwest(reqwest::Error { kind: Request, url: Url { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("blockstream.info")), port: None, path: "/testnet/api/fee-estimates", query: None, fragment: None }, source: hyper::Error(Connect, ConnectError("dns error", Custom { kind: Uncategorized, error: "failed to lookup address information: Temporary failure in name resolution" })) })
+2026-01-26 22:11:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:12:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:12:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:12:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:13:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:13:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:13:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:14:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:14:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:15:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:15:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:15:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:16:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:16:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:16:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:17:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:17:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:17:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:18:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:18:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:19:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:19:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:19:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:20:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:20:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:20:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:21:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:21:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:21:46 ERROR [ldk_node::chain:771] Failed to retrieve fee rate estimates: Reqwest(reqwest::Error { kind: Request, url: Url { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("blockstream.info")), port: None, path: "/testnet/api/fee-estimates", query: None, fragment: None }, source: hyper::Error(Connect, ConnectError("dns error", Custom { kind: Uncategorized, error: "failed to lookup address information: Temporary failure in name resolution" })) })
+2026-01-26 22:21:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:22:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:22:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:23:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:23:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:23:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:24:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:24:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:24:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:25:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:25:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:25:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:26:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:26:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:27:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:27:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:27:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:28:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:28:26 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:28:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:29:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:29:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:29:46 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:30:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:30:46 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 22:31:06 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 22:31:16 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 23:12:32 ERROR [ldk_node::chain:771] Failed to retrieve fee rate estimates: Reqwest(reqwest::Error { kind: Request, url: Url { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("blockstream.info")), port: None, path: "/testnet/api/fee-estimates", query: None, fragment: None }, source: hyper::Error(Connect, ConnectError("dns error", Custom { kind: Uncategorized, error: "failed to lookup address information: Temporary failure in name resolution" })) })
+2026-01-26 23:12:32 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 23:13:02 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 23:13:12 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-26 23:13:32 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-26 23:14:02 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 00:22:13 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-27 00:22:13 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 00:22:41 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 00:23:11 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 00:23:31 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-27 00:23:41 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 00:24:11 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 00:24:41 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 00:24:51 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): error trying to connect: dns error: failed to lookup address information: Temporary failure in name resolution
+2026-01-27 00:25:11 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 00:25:43 DEBUG [lightning::chain::chainmonitor:718] New best block 0000000000000190071d69c3dd859ac668b70603c5d7d3d5e1a78db9a13de510 at height 4837445 provided via best_block_updated
+2026-01-27 00:25:44 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000190071d69c3dd859ac668b70603c5d7d3d5e1a78db9a13de510 in 2703ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:25:44 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2703ms.
+2026-01-27 00:26:12 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 721ms.
+2026-01-27 00:26:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000190071d69c3dd859ac668b70603c5d7d3d5e1a78db9a13de510 in 478ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:26:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 478ms.
+2026-01-27 00:26:43 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000000684ac4a7b6e07fef6588fa1b30a924c027e578fdc6feba37d3 at height 4837446 provided via best_block_updated
+2026-01-27 00:26:44 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000684ac4a7b6e07fef6588fa1b30a924c027e578fdc6feba37d3 in 2383ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:26:44 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2383ms.
+2026-01-27 00:27:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000684ac4a7b6e07fef6588fa1b30a924c027e578fdc6feba37d3 in 563ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:27:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 564ms.
+2026-01-27 00:27:32 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 413ms.
+2026-01-27 00:27:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000684ac4a7b6e07fef6588fa1b30a924c027e578fdc6feba37d3 in 352ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:27:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 353ms.
+2026-01-27 00:28:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000684ac4a7b6e07fef6588fa1b30a924c027e578fdc6feba37d3 in 292ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:28:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 292ms.
+2026-01-27 00:28:43 DEBUG [lightning::chain::chainmonitor:718] New best block 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 at height 4837447 provided via best_block_updated
+2026-01-27 00:28:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 2220ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:28:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2220ms.
+2026-01-27 00:28:52 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 468ms.
+2026-01-27 00:29:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 402ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:29:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 403ms.
+2026-01-27 00:29:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 323ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:29:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 323ms.
+2026-01-27 00:30:12 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 714ms.
+2026-01-27 00:30:15 INFO  [ldk_node::chain:822] Fee rate cache update finished in 2945ms.
+2026-01-27 00:30:15 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 318ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:30:15 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 318ms.
+2026-01-27 00:30:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 322ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:30:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 328ms.
+2026-01-27 00:31:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 305ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:31:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 306ms.
+2026-01-27 00:31:31 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 340ms.
+2026-01-27 00:31:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 319ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:31:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 320ms.
+2026-01-27 00:32:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 363ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:32:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 364ms.
+2026-01-27 00:32:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 0000000000000035b18b62cec25cfdd6c8d4ea88c9a0d990d028e459bf6973f3 in 592ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:32:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 597ms.
+2026-01-27 00:32:52 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 454ms.
+2026-01-27 00:33:13 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000008a1e5128395b19aa6f620b29bf2ea72b9bda4057530bd38fc7 at height 4837448 provided via best_block_updated
+2026-01-27 00:33:14 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008a1e5128395b19aa6f620b29bf2ea72b9bda4057530bd38fc7 in 2451ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:33:14 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2455ms.
+2026-01-27 00:33:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008a1e5128395b19aa6f620b29bf2ea72b9bda4057530bd38fc7 in 404ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:33:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 404ms.
+2026-01-27 00:34:12 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 536ms.
+2026-01-27 00:34:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008a1e5128395b19aa6f620b29bf2ea72b9bda4057530bd38fc7 in 291ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:34:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 292ms.
+2026-01-27 00:34:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008a1e5128395b19aa6f620b29bf2ea72b9bda4057530bd38fc7 in 616ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:34:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 616ms.
+2026-01-27 00:35:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008a1e5128395b19aa6f620b29bf2ea72b9bda4057530bd38fc7 in 321ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:35:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 322ms.
+2026-01-27 00:35:31 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 325ms.
+2026-01-27 00:35:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008a1e5128395b19aa6f620b29bf2ea72b9bda4057530bd38fc7 in 322ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:35:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 323ms.
+2026-01-27 00:36:12 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000001550484c24d93e54dee487fcee9a8e50ce18ef74bcc3e2fa504 at height 4837449 provided via best_block_updated
+2026-01-27 00:36:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001550484c24d93e54dee487fcee9a8e50ce18ef74bcc3e2fa504 in 1535ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:36:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1540ms.
+2026-01-27 00:36:45 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001550484c24d93e54dee487fcee9a8e50ce18ef74bcc3e2fa504 in 3604ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:36:45 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 3605ms.
+2026-01-27 00:36:53 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1467ms.
+2026-01-27 00:37:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001550484c24d93e54dee487fcee9a8e50ce18ef74bcc3e2fa504 in 880ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:37:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 880ms.
+2026-01-27 00:37:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001550484c24d93e54dee487fcee9a8e50ce18ef74bcc3e2fa504 in 438ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:37:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 438ms.
+2026-01-27 00:38:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001550484c24d93e54dee487fcee9a8e50ce18ef74bcc3e2fa504 in 323ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:38:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 324ms.
+2026-01-27 00:38:12 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 623ms.
+2026-01-27 00:38:43 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a at height 4837450 provided via best_block_updated
+2026-01-27 00:38:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 1875ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:38:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1876ms.
+2026-01-27 00:39:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 443ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:39:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 444ms.
+2026-01-27 00:39:31 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 339ms.
+2026-01-27 00:39:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 304ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:39:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 304ms.
+2026-01-27 00:40:11 INFO  [ldk_node::chain:822] Fee rate cache update finished in 321ms.
+2026-01-27 00:40:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 328ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:40:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 328ms.
+2026-01-27 00:40:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 452ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:40:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 453ms.
+2026-01-27 00:40:52 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 567ms.
+2026-01-27 00:41:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 558ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:41:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 558ms.
+2026-01-27 00:41:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 323ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:41:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 324ms.
+2026-01-27 00:42:12 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 450ms.
+2026-01-27 00:42:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 370ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:42:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 375ms.
+2026-01-27 00:42:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 300ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:42:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 301ms.
+2026-01-27 00:43:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 320ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:43:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 320ms.
+2026-01-27 00:43:32 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1044ms.
+2026-01-27 00:43:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 367ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:43:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 370ms.
+2026-01-27 00:44:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 384ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:44:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 386ms.
+2026-01-27 00:44:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 1469ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:44:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1469ms.
+2026-01-27 00:44:52 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 552ms.
+2026-01-27 00:45:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000c57feb8a2c82d6a5e3c3834b88283b34d935a826fe40a3f94a in 317ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:45:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 317ms.
+2026-01-27 00:45:43 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f at height 4837451 provided via best_block_updated
+2026-01-27 00:45:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 1875ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:45:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1877ms.
+2026-01-27 00:46:11 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 331ms.
+2026-01-27 00:46:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 398ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:46:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 399ms.
+2026-01-27 00:46:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 1630ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:46:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1630ms.
+2026-01-27 00:47:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 395ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:47:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 395ms.
+2026-01-27 00:47:31 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 290ms.
+2026-01-27 00:47:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 345ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:47:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 345ms.
+2026-01-27 00:48:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 504ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:48:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 504ms.
+2026-01-27 00:48:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 614ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:48:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 615ms.
+2026-01-27 00:48:51 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 363ms.
+2026-01-27 00:49:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 368ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:49:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 369ms.
+2026-01-27 00:49:44 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 2415ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:49:44 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2417ms.
+2026-01-27 00:50:12 INFO  [ldk_node::chain:822] Fee rate cache update finished in 430ms.
+2026-01-27 00:50:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 320ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:50:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 320ms.
+2026-01-27 00:50:13 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 882ms.
+2026-01-27 00:50:45 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 3877ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:50:45 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 3878ms.
+2026-01-27 00:51:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 466ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:51:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 466ms.
+2026-01-27 00:51:32 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 603ms.
+2026-01-27 00:51:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 529ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:51:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 529ms.
+2026-01-27 00:52:11 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 312ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:52:11 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 313ms.
+2026-01-27 00:52:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 366ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:52:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 366ms.
+2026-01-27 00:52:52 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 607ms.
+2026-01-27 00:53:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 960ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:53:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 996ms.
+2026-01-27 00:53:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 619ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:53:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 639ms.
+2026-01-27 00:54:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 454ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:54:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 454ms.
+2026-01-27 00:54:12 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 331ms.
+2026-01-27 00:54:42 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 445ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:54:42 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 447ms.
+2026-01-27 00:55:18 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 6636ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:55:18 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 6644ms.
+2026-01-27 00:55:41 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-27 00:55:41 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 308ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:55:41 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 309ms.
+2026-01-27 00:56:12 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 367ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:56:12 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 367ms.
+2026-01-27 00:56:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 526ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:56:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 529ms.
+2026-01-27 00:56:53 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 462ms.
+2026-01-27 00:57:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008d761c30668540ca80149a3ba6b15f5b678de902eebe193f2f in 313ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:57:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 313ms.
+2026-01-27 00:57:44 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000003a9b8a1f4a95295c0997c905c400b1f6e2d30d05620343c97b at height 4837452 provided via best_block_updated
+2026-01-27 00:57:44 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000003a9b8a1f4a95295c0997c905c400b1f6e2d30d05620343c97b in 1994ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:57:44 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1995ms.
+2026-01-27 00:58:13 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 321ms.
+2026-01-27 00:58:14 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 at height 4837453 provided via best_block_updated
+2026-01-27 00:58:14 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 in 1742ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:58:14 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1744ms.
+2026-01-27 00:58:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 in 356ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:58:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 356ms.
+2026-01-27 00:59:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 in 368ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:59:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 368ms.
+2026-01-27 00:59:33 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 308ms.
+2026-01-27 00:59:45 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 in 2387ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 00:59:45 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2389ms.
+2026-01-27 01:00:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 in 389ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:00:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 393ms.
+2026-01-27 01:00:13 INFO  [ldk_node::chain:822] Fee rate cache update finished in 484ms.
+2026-01-27 01:00:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 in 296ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:00:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 297ms.
+2026-01-27 01:00:53 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 298ms.
+2026-01-27 01:01:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 in 399ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:01:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 401ms.
+2026-01-27 01:01:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000014afa2969ed755e406cb3c4046d45dc3d204aa3af1767fd4058 in 523ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:01:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 524ms.
+2026-01-27 01:02:13 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 329ms.
+2026-01-27 01:02:14 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 at height 4837454 provided via best_block_updated
+2026-01-27 01:02:14 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 1628ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:02:14 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1628ms.
+2026-01-27 01:02:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 737ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:02:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 774ms.
+2026-01-27 01:03:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 745ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:03:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 777ms.
+2026-01-27 01:03:33 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 428ms.
+2026-01-27 01:03:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 333ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:03:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 333ms.
+2026-01-27 01:04:22 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-27 01:04:45 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 3203ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:04:45 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 3207ms.
+2026-01-27 01:04:53 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 344ms.
+2026-01-27 01:05:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 289ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:05:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 291ms.
+2026-01-27 01:05:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 982ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:05:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 983ms.
+2026-01-27 01:06:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 574ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:06:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 577ms.
+2026-01-27 01:06:13 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 412ms.
+2026-01-27 01:06:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 364ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:06:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 364ms.
+2026-01-27 01:07:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 369ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:07:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 370ms.
+2026-01-27 01:07:33 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 297ms.
+2026-01-27 01:07:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 307ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:07:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 307ms.
+2026-01-27 01:08:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 386ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:08:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 388ms.
+2026-01-27 01:08:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 383ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:08:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 383ms.
+2026-01-27 01:08:53 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 523ms.
+2026-01-27 01:09:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 490ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:09:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 490ms.
+2026-01-27 01:09:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 598ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:09:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 598ms.
+2026-01-27 01:10:13 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 298ms.
+2026-01-27 01:10:13 INFO  [ldk_node::chain:822] Fee rate cache update finished in 290ms.
+2026-01-27 01:10:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 297ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:10:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 297ms.
+2026-01-27 01:10:43 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 444ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:10:43 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 445ms.
+2026-01-27 01:11:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000000898b01bf1b513719dc6af325f7aa2ee8ddf72c49dceb25cde5 in 290ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:11:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 290ms.
+2026-01-27 01:11:33 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 341ms.
+2026-01-27 01:11:44 DEBUG [lightning::chain::chainmonitor:718] New best block 00000000000001211a5004433f868e6a65ea5f520c30e73b017a42f21df25348 at height 4837456 provided via best_block_updated
+2026-01-27 01:11:45 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001211a5004433f868e6a65ea5f520c30e73b017a42f21df25348 in 2500ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:11:45 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 2500ms.
+2026-01-27 01:12:13 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001211a5004433f868e6a65ea5f520c30e73b017a42f21df25348 in 485ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:12:13 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 521ms.
+2026-01-27 01:12:48 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001211a5004433f868e6a65ea5f520c30e73b017a42f21df25348 in 5090ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:12:48 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 5131ms.
+2026-01-27 01:12:54 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 1181ms.
+2026-01-27 01:13:14 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 00000000000001211a5004433f868e6a65ea5f520c30e73b017a42f21df25348 in 866ms: 0 confirmed, 0 unconfirmed.
+2026-01-27 01:13:14 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1004ms.

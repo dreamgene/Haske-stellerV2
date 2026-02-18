@@ -1,0 +1,8 @@
+# Rust build artifacts
+/target/
+
+# Editor settings
+.vscode/
+
+# Local runtime data
+*.sqlite

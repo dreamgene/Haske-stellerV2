@@ -1,0 +1,91 @@
+2026-01-28 17:28:47 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-28 17:28:47 INFO  [ldk_node:232] Starting up LDK Node with node ID 03841ced533ed645c013f987cfe91fdac32f79c70bbc236623d3032b4f50da1702 on network: testnet
+2026-01-28 17:28:48 INFO  [ldk_node::chain:822] Fee rate cache update finished in 1263ms.
+2026-01-28 17:28:48 INFO  [ldk_node:634] Startup complete.
+2026-01-28 17:28:49 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 620ms.
+2026-01-28 17:28:50 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000016910d7d2bdd329e2233a6ec4ce6c4d6b70938ef3ed63c9f7a7 at height 4837908 provided via best_block_updated
+2026-01-28 17:28:51 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000016910d7d2bdd329e2233a6ec4ce6c4d6b70938ef3ed63c9f7a7 in 1723ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:28:51 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1723ms.
+2026-01-28 17:29:19 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000016910d7d2bdd329e2233a6ec4ce6c4d6b70938ef3ed63c9f7a7 in 411ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:29:19 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 411ms.
+2026-01-28 17:29:49 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000016910d7d2bdd329e2233a6ec4ce6c4d6b70938ef3ed63c9f7a7 in 518ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:29:49 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 518ms.
+2026-01-28 17:30:09 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 692ms.
+2026-01-28 17:30:19 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000016910d7d2bdd329e2233a6ec4ce6c4d6b70938ef3ed63c9f7a7 in 447ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:30:19 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 448ms.
+2026-01-28 17:30:49 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000016910d7d2bdd329e2233a6ec4ce6c4d6b70938ef3ed63c9f7a7 in 318ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:30:49 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 318ms.
+2026-01-28 17:31:19 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000016910d7d2bdd329e2233a6ec4ce6c4d6b70938ef3ed63c9f7a7 in 441ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:31:19 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 441ms.
+2026-01-28 17:31:29 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 578ms.
+2026-01-28 17:31:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:32:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:32:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:33:08 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:33:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:33:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:34:18 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:34:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:34:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:35:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:35:38 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:35:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:36:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:36:51 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb10p1p5h5jfndqv2pshjmt9de6qnp4qwzpem2n8mtytsqnlxrul6glmtpj77w8pw7zxe3r6vpjkn6smgtsypp5qhk3f7lwswmpcjdgs0635nhdxcwunjyanu9dnqnpchxrpjpefqdqsp58f40x0cf6hu7gz7se5p6tr6d5rdj6txzvte6l2fdyzlx0jvay4us9qyysgqcqpcxqzuymrhnjsxjn3qulz3jvtzwcnkqy8fq5culcsz7jmsvxe9s37w3yjakv5nm4fsuxwe8vvqqjwywyj4dug7lcxreswnxgdjjfuz2x55v88qp8cmtjs
+2026-01-28 17:36:58 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:37:08 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:37:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:37:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:38:18 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:38:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:38:53 ERROR [ldk_node::chain:767] Updating fee rate estimates timed out: deadline has elapsed
+2026-01-28 17:39:03 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:39:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:39:38 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:39:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:40:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:40:58 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:41:08 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:41:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:41:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:42:18 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:42:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:42:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:43:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:43:38 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:43:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:44:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:44:58 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:45:08 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:45:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:45:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:46:18 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:46:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:46:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:47:28 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:47:38 ERROR [ldk_node::chain:489] Incremental sync of on-chain wallet failed due to HTTP connection error: error sending request for url (https://blockstream.info/testnet/api/blocks): operation timed out
+2026-01-28 17:47:58 ERROR [ldk_node::chain:592] Sync of Lightning wallet failed: Failed to conduct transaction sync.
+2026-01-28 17:48:22 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000004265d13fab8ac2c426e519dfcc40ace2c051b98d0c1bc6941e at height 4837911 provided via best_block_updated
+2026-01-28 17:48:23 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000004265d13fab8ac2c426e519dfcc40ace2c051b98d0c1bc6941e in 4835ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:48:23 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 4835ms.
+2026-01-28 17:48:49 INFO  [ldk_node::chain:822] Fee rate cache update finished in 935ms.
+2026-01-28 17:48:50 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000004265d13fab8ac2c426e519dfcc40ace2c051b98d0c1bc6941e in 476ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:48:50 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 476ms.
+2026-01-28 17:48:50 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 491ms.
+2026-01-28 17:49:19 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000004265d13fab8ac2c426e519dfcc40ace2c051b98d0c1bc6941e in 312ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:49:19 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 312ms.
+2026-01-28 17:49:50 DEBUG [lightning::chain::chainmonitor:718] New best block 000000000000008497496549850311b98149ea4fc94205dc2f6ed670cb72b5ff at height 4837912 provided via best_block_updated
+2026-01-28 17:49:50 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008497496549850311b98149ea4fc94205dc2f6ed670cb72b5ff in 1776ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:49:50 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 1776ms.
+2026-01-28 17:50:09 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 531ms.
+2026-01-28 17:50:19 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008497496549850311b98149ea4fc94205dc2f6ed670cb72b5ff in 325ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:50:19 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 325ms.
+2026-01-28 17:50:49 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008497496549850311b98149ea4fc94205dc2f6ed670cb72b5ff in 340ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:50:49 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 341ms.
+2026-01-28 17:51:19 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008497496549850311b98149ea4fc94205dc2f6ed670cb72b5ff in 448ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:51:19 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 448ms.
+2026-01-28 17:51:29 INFO  [ldk_node::chain:489] Incremental sync of on-chain wallet finished in 366ms.
+2026-01-28 17:51:49 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008497496549850311b98149ea4fc94205dc2f6ed670cb72b5ff in 454ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:51:49 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 455ms.
+2026-01-28 17:52:19 DEBUG [lightning_transaction_sync::esplora:239] Finished transaction sync at tip 000000000000008497496549850311b98149ea4fc94205dc2f6ed670cb72b5ff in 487ms: 0 confirmed, 0 unconfirmed.
+2026-01-28 17:52:19 INFO  [ldk_node::chain:561] Sync of Lightning wallet finished in 487ms.

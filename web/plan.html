@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HASKE · Payment & Access</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;700&display=swap");
+
+      :root {
+        --bg: #f4f6ff;
+        --bg-2: #e9f1ff;
+        --ink: #0f1220;
+        --muted: #60657a;
+        --accent: #3f5bff;
+        --accent-2: #ff8a3d;
+        --accent-3: #17c4d8;
+        --panel: rgba(255, 255, 255, 0.92);
+        --panel-strong: rgba(255, 255, 255, 0.96);
+        --panel-dark: rgba(15, 18, 32, 0.96);
+        --stroke: rgba(18, 24, 40, 0.12);
+        --shadow: 0 30px 60px rgba(33, 52, 120, 0.18);
+        --grid: rgba(30, 38, 70, 0.05);
+        --header-bg: rgba(244, 246, 255, 0.9);
+      }
+
+      [data-theme="dark"] {
+        --bg: #0b0f1c;
+        --bg-2: #0f1426;
+        --ink: #f3f5ff;
+        --muted: #9aa3bf;
+        --panel: rgba(20, 24, 40, 0.9);
+        --panel-strong: rgba(20, 24, 40, 0.98);
+        --panel-dark: rgba(8, 10, 20, 0.96);
+        --stroke: rgba(148, 162, 206, 0.18);
+        --shadow: 0 30px 60px rgba(3, 6, 20, 0.6);
+        --grid: rgba(135, 150, 200, 0.12);
+        --header-bg: rgba(11, 15, 28, 0.9);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Manrope", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: radial-gradient(circle at 18% 10%, rgba(63, 91, 255, 0.14), transparent 45%),
+          radial-gradient(circle at 80% 0%, rgba(23, 196, 216, 0.18), transparent 40%),
+          linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: linear-gradient(var(--grid) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+        background-size: 72px 72px;
+        pointer-events: none;
+        opacity: 0.35;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        background: var(--header-bg);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(18, 24, 40, 0.08);
+      }
+
+      .nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 18px clamp(20px, 5vw, 64px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+      }
+
+      .logo .logo-mark {
+        width: 32px;
+        height: 32px;
+        border-radius: 12px 5px 12px 5px;
+        background: conic-gradient(from 210deg, var(--accent), var(--accent-3), var(--accent-2));
+        display: grid;
+        place-items: center;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .logo .logo-mark::before {
+        content: "HS";
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+      }
+
+      .logo .logo-mark::after {
+        content: "";
+        position: absolute;
+        inset: 5px;
+        border-radius: 9px 3px 9px 3px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), transparent 60%);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      .nav-links a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .button {
+        border: none;
+        padding: 10px 22px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .button.primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-3));
+        color: #ffffff;
+        box-shadow: var(--shadow);
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--ink);
+        border: 1px solid var(--stroke);
+      }
+
+      .toggle {
+        border: 1px solid var(--stroke);
+        background: var(--panel);
+        color: var(--muted);
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        cursor: pointer;
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px clamp(20px, 5vw, 64px) 90px;
+        display: grid;
+        gap: 40px;
+      }
+
+      .page-hero {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+        align-items: center;
+      }
+
+      .page-hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.2rem, 4vw, 3.6rem);
+        margin: 0 0 12px;
+      }
+
+      .page-hero p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .stage {
+        position: relative;
+        background: rgba(15, 18, 32, 0.92);
+        border-radius: 24px;
+        box-shadow: 0 40px 80px rgba(10, 14, 30, 0.5);
+        padding: 28px;
+        display: grid;
+        gap: 18px;
+        color: #f4f5ff;
+      }
+
+      .stage::before {
+        content: "";
+        position: absolute;
+        inset: 12px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        pointer-events: none;
+      }
+
+      .stage-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        color: #bfc6ff;
+      }
+
+      .stage-badge {
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: rgba(125, 141, 255, 0.18);
+        font-weight: 600;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .stage-body {
+        display: grid;
+        gap: 12px;
+      }
+
+      .stage-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+
+      .stage-steps {
+        display: flex;
+        gap: 10px;
+        font-size: 0.85rem;
+        color: #9aa4ff;
+      }
+
+      .stage-steps span {
+        opacity: 0.6;
+      }
+
+      .stage-steps .active {
+        opacity: 1;
+        font-weight: 600;
+      }
+
+      .plan-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 8px;
+      }
+
+      .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 16px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .plan-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .plan-check {
+        width: 18px;
+        height: 18px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        display: grid;
+        place-items: center;
+        color: #9aa4ff;
+      }
+
+      .plan.active {
+        border-color: rgba(125, 141, 255, 0.6);
+        background: rgba(125, 141, 255, 0.12);
+      }
+
+      .plan.active .plan-check {
+        background: rgba(125, 141, 255, 0.3);
+        color: #ffffff;
+      }
+
+      .plan-meta {
+        display: grid;
+        gap: 4px;
+      }
+
+      .plan-meta small {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .plan-price {
+        text-align: right;
+        font-weight: 600;
+      }
+
+      .plan-price small {
+        display: block;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 500;
+      }
+
+      .stage-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 8px;
+      }
+
+      .stage-footer a {
+        color: #9aa4ff;
+        font-size: 0.85rem;
+        text-decoration: none;
+      }
+
+      .primary-pill {
+        padding: 10px 20px;
+        border-radius: 14px;
+        border: none;
+        background: linear-gradient(135deg, #6f7cff, #8f70ff);
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .side-card {
+        background: var(--panel);
+        border: 1px solid var(--stroke);
+        border-radius: 20px;
+        padding: 20px;
+        display: grid;
+        gap: 12px;
+        box-shadow: var(--shadow);
+      }
+
+      .side-card h4 {
+        margin: 0;
+      }
+
+      .side-card ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .demo-output {
+        padding: 14px;
+        border-radius: 16px;
+        border: 1px dashed var(--stroke);
+        background: var(--panel-strong);
+        font-family: "SFMono-Regular", "Courier New", monospace;
+        font-size: 0.85rem;
+        color: var(--ink);
+        white-space: pre-wrap;
+      }
+
+      .footer {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 900px) {
+        .stage-footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo"><span class="logo-mark" aria-hidden="true"></span> HASKE</div>
+        <div class="nav-links">
+          <a href="checkout.html">Landing</a>
+          <a href="#flow">Flow</a>
+          <a href="#details">Details</a>
+          <button class="button secondary" data-route="checkout.html#demo">Get Invoice</button>
+          <button class="toggle" id="themeToggle">Light mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div>
+          <div class="logo"><span class="logo-mark" aria-hidden="true"></span> HASKE Access</div>
+          <h1>Track payment status and issue an access pass.</h1>
+          <p>
+            Lightning Pass issues a signed access token after a Lightning payment settles. The
+            token verifies offline with no accounts or ticket databases.
+          </p>
+          <button class="button primary" data-api="http://localhost:3000/api/invoice">Request invoice</button>
+        </div>
+        <div class="stage" id="flow">
+          <div class="stage-header">
+            <div class="stage-badge">Demo</div>
+            <div>Payment & Access</div>
+          </div>
+          <div class="stage-body">
+            <div class="stage-title">Lightning payment to offline pass</div>
+            <div class="stage-steps">
+              <span class="active">Invoice</span>
+              <span>›</span>
+              <span>Payment</span>
+              <span>›</span>
+              <span>Access</span>
+            </div>
+            <p style="color: rgba(255, 255, 255, 0.7); margin: 0;">
+              A settled payment mints a signed token that can be verified offline.
+            </p>
+            <div class="plan-list">
+              <div class="plan active">
+                <div class="plan-left">
+                  <div class="plan-check">✓</div>
+                  <div class="plan-meta">
+                    <strong>Create invoice</strong>
+                    <small>POST <code>/api/invoice</code> returns a BOLT11 invoice.</small>
+                  </div>
+                </div>
+                <div class="plan-price">
+                  250,000 msat
+                  <small>Demo amount</small>
+                </div>
+              </div>
+              <div class="plan">
+                <div class="plan-left">
+                  <div class="plan-check"> </div>
+                  <div class="plan-meta">
+                    <strong>Claimed payment</strong>
+                    <small>LDK emits PaymentClaimed after settlement.</small>
+                  </div>
+                </div>
+                <div class="plan-price">
+                  Status
+                  <small>Pending → Settled</small>
+                </div>
+              </div>
+              <div class="plan">
+                <div class="plan-left">
+                  <div class="plan-check"> </div>
+                  <div class="plan-meta">
+                    <strong>Issue access token</strong>
+                    <small>Signed payload is returned as a QR.</small>
+                  </div>
+                </div>
+                <div class="plan-price">
+                  Offline
+                  <small>Ed25519 verify</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stage-footer">
+            <a href="#details">Tokens expire quickly and include nonces.</a>
+            <button class="primary-pill" data-api="http://localhost:3000/api/invoice">Request invoice</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards" id="details">
+        <div class="side-card">
+          <h4>What you get</h4>
+          <ul>
+            <li>Invoice creation and settlement tracking</li>
+            <li>Signed access token payload (Ed25519)</li>
+            <li>QR payload for offline verification</li>
+            <li>No accounts or ticket database required</li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h4>Payment snapshot</h4>
+          <p class="footer">A demo invoice will be requested from the local daemon.</p>
+          <div class="demo-output" id="demoOutput">Waiting for invoice...</div>
+        </div>
+        <div class="side-card">
+          <h4>HASKE support</h4>
+          <p class="footer">
+            This demo focuses on settlement-triggered access tokens and offline verification.
+          </p>
+          <button class="button secondary" data-route="checkout.html#faq">Visit FAQ</button>
+        </div>
+      </section>
+
+      <section class="footer">
+        Lightning Pass · Payment status and access issuance
+      </section>
+    </main>
+
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const storedTheme = localStorage.getItem("light-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("light-theme", theme);
+        themeToggle.textContent = theme === "dark" ? "Dark mode" : "Light mode";
+      }
+
+      setTheme(initialTheme);
+
+      themeToggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        setTheme(current === "dark" ? "light" : "dark");
+      });
+
+      const demoOutput = document.getElementById("demoOutput");
+      const apiButtons = document.querySelectorAll("[data-api]");
+      const routeButtons = document.querySelectorAll("[data-route]");
+
+      routeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const target = button.getAttribute("data-route");
+          if (target) {
+            window.location.href = target;
+          }
+        });
+      });
+
+      function formatStatus(payload) {
+        const lines = [];
+        lines.push(`status: ${payload.status}`);
+        lines.push(`expires_at: ${payload.expires_at}`);
+        if (payload.access_token) {
+          lines.push(`access_token: ${payload.access_token}`);
+        }
+        if (payload.access_qr_png) {
+          lines.push(`access_qr_png: ${payload.access_qr_png}`);
+        }
+        if (payload.access_qr_ascii) {
+          lines.push(`access_qr_ascii:\n${payload.access_qr_ascii}`);
+        }
+        return lines.join("\n");
+      }
+
+      async function pollInvoiceStatus(baseEndpoint, invoiceId) {
+        const statusUrl = `${baseEndpoint}/${invoiceId}`;
+        const startedAt = Date.now();
+        demoOutput.textContent = `invoice_id: ${invoiceId}\nstatus: pending`;
+
+        return new Promise((resolve) => {
+          const interval = setInterval(async () => {
+            const elapsed = Date.now() - startedAt;
+            if (elapsed > 90_000) {
+              clearInterval(interval);
+              demoOutput.textContent += "\nstatus: timeout";
+              resolve();
+              return;
+            }
+            try {
+              const res = await fetch(statusUrl);
+              if (!res.ok) {
+                throw new Error(`Status failed: ${res.status}`);
+              }
+              const payload = await res.json();
+              demoOutput.textContent = formatStatus(payload);
+              if (payload.status === "settled" || payload.access_token) {
+                clearInterval(interval);
+                resolve();
+              }
+            } catch (err) {
+              clearInterval(interval);
+              demoOutput.textContent = `API error: ${err.message}`;
+              resolve();
+            }
+          }, 2000);
+        });
+      }
+
+      apiButtons.forEach((button) => {
+        button.addEventListener("click", async () => {
+          const endpoint = button.getAttribute("data-api");
+          if (!endpoint) return;
+          const originalText = button.textContent;
+          button.disabled = true;
+          button.textContent = "Requesting…";
+          try {
+            const response = await fetch(endpoint, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ amount_msat: 250000, description: "HASKE plan" }),
+            });
+            if (!response.ok) {
+              throw new Error(`Request failed: ${response.status}`);
+            }
+            const data = await response.json();
+            demoOutput.textContent = JSON.stringify(data, null, 2);
+            if (data && data.invoice_id) {
+              await pollInvoiceStatus(endpoint, data.invoice_id);
+            }
+          } catch (err) {
+            demoOutput.textContent = `API error: ${err.message}`;
+          } finally {
+            button.disabled = false;
+            button.textContent = originalText;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

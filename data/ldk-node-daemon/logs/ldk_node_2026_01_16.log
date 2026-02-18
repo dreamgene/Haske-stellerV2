@@ -1,0 +1,2 @@
+2026-01-16 19:26:45 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-16 19:26:45 INFO  [ldk_node:232] Starting up LDK Node with node ID 03841ced533ed645c013f987cfe91fdac32f79c70bbc236623d3032b4f50da1702 on network: testnet

@@ -1,0 +1,11 @@
+[package]
+name = "access_token"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+base64 = { workspace = true }
+ed25519-dalek = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

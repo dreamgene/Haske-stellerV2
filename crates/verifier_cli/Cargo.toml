@@ -1,0 +1,12 @@
+[package]
+name = "verifier_cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+access_token = { path = "../access_token" }
+base64 = { workspace = true }
+clap = { workspace = true }
+ed25519-dalek = { workspace = true }
+image = "0.24"
+rqrr = "0.6"

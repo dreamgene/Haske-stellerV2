@@ -1,0 +1,5 @@
+2026-01-28 19:22:13 INFO  [ldk_node::builder:1160] Successfully migrated OutputSweeper data.
+2026-01-28 19:22:13 INFO  [ldk_node:232] Starting up LDK Node with node ID 02b0593e745af2b87619ec51a48e7a10869d838366e772f7242397e40ce454fa34 on network: testnet
+2026-01-28 19:22:14 INFO  [ldk_node::chain:822] Fee rate cache update finished in 958ms.
+2026-01-28 19:22:14 INFO  [ldk_node:634] Startup complete.
+2026-01-28 19:23:22 INFO  [ldk_node::payment::bolt11:507] Invoice created: lntb2500n1p5h5c32dqcfpq4xj69ypkxjan9ypjx2mt0np4q2c9j0n5ttetsasea3g6frn6zzrfmqurvmnh9aeyywt7gr8y2nargpp5g5qtz9cgag3wsrgtukhczjm760wcz5mf2cc7hr863r74fxf96r5qsp5rx8u9ketpglscfhc2m5psrj9pzantku7t3pwwunqena7njrpp2mq9qyysgqcqpcxqzuyy90x6kvwn2wqcmt8vf7df450886x6qpp9d74jlaf0aewu8hued3ra5hyxw7tywa00lsaawurxcr7s2qudm2ekdmpp22tgu5mdrg3zhqqc0xtdn
