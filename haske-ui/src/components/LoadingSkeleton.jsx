@@ -20,11 +20,11 @@ export function QRBlockSkeleton() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.18, ease: "easeOut" }}
-      className="overflow-hidden rounded-[28px] bg-white p-5 text-center shadow-2xl sm:p-6"
+      className="overflow-hidden rounded-[32px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),rgba(255,255,255,0.02)_55%)] p-5 text-center shadow-[0_24px_80px_rgba(0,0,0,0.32)] sm:p-6"
       aria-hidden="true"
     >
-      <div className="mx-auto flex min-h-[224px] items-center justify-center sm:min-h-[240px]">
-        <ShimmerBlock className="h-[208px] w-[208px] rounded-[28px]" />
+      <div className="mx-auto flex min-h-[224px] items-center justify-center rounded-[28px] bg-white p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:min-h-[240px]">
+        <ShimmerBlock className="h-[208px] w-[208px] rounded-[24px]" />
       </div>
       <div className="mt-4 flex flex-col items-center gap-2">
         <ShimmerBlock className="h-4 w-40 rounded-full" />

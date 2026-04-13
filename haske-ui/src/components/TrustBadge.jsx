@@ -61,8 +61,8 @@ const BADGE_CONFIG = {
 
 function Badge({ icon, label }) {
   return (
-    <div className="inline-flex min-h-9 items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-[11px] font-semibold tracking-[0.02em] text-slate-300 backdrop-blur">
-      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/[0.06] text-[#D8E6F5]">
+    <div className="inline-flex min-h-10 items-center gap-2.5 rounded-full border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] px-3.5 py-2 text-[11px] font-semibold tracking-[0.01em] text-slate-300 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur">
+      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/[0.07] text-[#D8E6F5]">
         {icon}
       </span>
       <span className="whitespace-nowrap">{label}</span>

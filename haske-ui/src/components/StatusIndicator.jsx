@@ -5,9 +5,9 @@ const STATUS_CONFIG = {
   WAITING: {
     label: "Waiting for payment",
     copy: "Waiting for payment... this usually takes a few seconds.",
-    accent: "text-[#FFC857]",
-    border: "border-[#FFC857]/20",
-    background: "bg-[#FFC857]/10",
+    accent: "text-[#F8C85A]",
+    border: "border-[#F8C85A]/18",
+    background: "bg-[linear-gradient(180deg,rgba(248,200,90,0.12),rgba(248,200,90,0.04))]",
     icon: (
       <span className="relative flex h-10 w-10 items-center justify-center rounded-full bg-[#FFC857]/14 text-[#FFC857]">
         <span className="absolute inset-0 rounded-full border border-[#FFC857]/30 animate-ping" />
@@ -19,9 +19,8 @@ const STATUS_CONFIG = {
     label: "Payment detected",
     copy: "Confirming the transaction on-chain now. Keep this screen open.",
     accent: "text-[#00D1FF]",
-    border: "border-[#00D1FF]/20",
-    background: "bg-[#00D1FF]/10",
-    iconBg: "bg-[#00D1FF]/14",
+    border: "border-[#00D1FF]/18",
+    background: "bg-[linear-gradient(180deg,rgba(0,209,255,0.12),rgba(0,209,255,0.04))]",
     icon: (
       <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#00D1FF]/14 text-[#00D1FF]">
         <svg
@@ -43,9 +42,8 @@ const STATUS_CONFIG = {
     label: "Verified and ready",
     copy: "Your pass is live and can be scanned at entry, even offline.",
     accent: "text-[#00FF9C]",
-    border: "border-[#00FF9C]/20",
-    background: "bg-[#00FF9C]/10",
-    iconBg: "bg-[#00FF9C]/14",
+    border: "border-[#00FF9C]/18",
+    background: "bg-[linear-gradient(180deg,rgba(0,255,156,0.12),rgba(0,255,156,0.04))]",
     icon: (
       <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#00FF9C]/14 text-[#00FF9C]">
         <svg
@@ -137,7 +135,7 @@ export default function StatusIndicator({ status }) {
         delay: isConfirmed ? 0.12 : 0,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className={`w-full rounded-2xl border ${config.border} ${config.background} p-4 transition-all duration-300 ease-out`}
+      className={`w-full rounded-[24px] border ${config.border} ${config.background} p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] transition-all duration-300 ease-out`}
       role="status"
       aria-live="polite"
     >
