@@ -2,6 +2,8 @@
 name = "access_token"
 version = "0.1.0"
 edition = "2021"
+description = "HASKEpay signed access token primitives for offline verification."
+license = "MIT"
 
 [dependencies]
 base64 = { workspace = true }

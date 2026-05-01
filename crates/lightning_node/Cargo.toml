@@ -3,6 +3,8 @@ name = "lightning_node"
 version = "0.1.0"
 edition = "2021"
 default-run = "lightning_node"
+description = "Legacy HASKEpay Lightning node reference path."
+license = "MIT"
 
 [dependencies]
 anyhow = { workspace = true }

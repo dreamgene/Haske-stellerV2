@@ -2,6 +2,8 @@
 name = "verifier_cli"
 version = "0.1.0"
 edition = "2021"
+description = "Offline verifier CLI for HASKEpay signed access passes."
+license = "MIT"
 
 [dependencies]
 access_token = { path = "../access_token" }

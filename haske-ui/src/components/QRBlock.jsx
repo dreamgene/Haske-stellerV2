@@ -86,14 +86,14 @@ export default function QRBlock() {
 
       <div className="mt-5 space-y-2 text-slate-100">
         <p className="text-base font-semibold tracking-tight text-white">
-          Scan with any Stellar wallet
+          Scan with any Lightning wallet
         </p>
         <p className="text-sm leading-6 text-slate-400">
           Fast settlement. Signed access issued after confirmation.
         </p>
       </div>
       <div className="mt-4 inline-flex items-center rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-slate-400">
-        Supports XLM / USDC
+        BOLT11 invoice
       </div>
     </motion.div>
   )

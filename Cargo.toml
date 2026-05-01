@@ -2,7 +2,7 @@
 members = [
     "crates/access_token",
     "crates/api_server",
-    "crates/lightning_node",
+    "crates/lightning_adapter",
     "crates/payment_core",
     "crates/qr",
     "crates/shared_types",

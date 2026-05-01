@@ -16,6 +16,8 @@ pub struct SessionRecord {
     pub event_id: String,
     pub paid: bool,
     pub expires_at: u64,
+    pub settlement_id: Option<String>,
+    pub payment_hash: Option<String>,
     pub tx_hash: Option<String>,
     pub access_token: Option<String>,
     pub access_qr_png: Option<String>,
@@ -50,6 +52,8 @@ impl PaymentService {
             payment_request: payment_request.clone(),
             event_id,
             paid: false,
+            settlement_id: None,
+            payment_hash: None,
             tx_hash: None,
             access_token: None,
             access_qr_png: None,
@@ -82,7 +86,9 @@ impl PaymentService {
             .ok_or_else(|| anyhow!("unknown session: {session_id}"))?;
 
         session.paid = true;
-        session.tx_hash = Some(artifact.tx_hash);
+        session.settlement_id = Some(artifact.settlement_id);
+        session.payment_hash = artifact.payment_hash;
+        session.tx_hash = artifact.tx_hash;
         session.access_token = Some(artifact.token);
         session.access_qr_png = Some(artifact.qr_png);
         session.access_qr_ascii = Some(artifact.qr_ascii);
@@ -109,10 +115,12 @@ impl PaymentService {
             request_expires_at: payment_request.expires_at,
             expires_at: session.expires_at,
             payment_request,
+            settlement_id: session.settlement_id,
+            payment_hash: session.payment_hash,
             tx_hash: session.tx_hash,
-            access_token: session.access_token.map(|token| {
-                serde_json::from_str::<Value>(&token).unwrap_or(Value::String(token))
-            }),
+            access_token: session
+                .access_token
+                .map(|token| serde_json::from_str::<Value>(&token).unwrap_or(Value::String(token))),
             access_qr_png: session.access_qr_png,
             access_qr_ascii: session.access_qr_ascii,
         }

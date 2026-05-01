@@ -17,7 +17,7 @@ const STATUS_CONFIG = {
   },
   DETECTED: {
     label: "Payment detected",
-    copy: "Confirming the transaction on-chain now. Keep this screen open.",
+    copy: "Confirming Lightning settlement now. Keep this screen open.",
     accent: "text-[#00D1FF]",
     border: "border-[#00D1FF]/18",
     background: "bg-[linear-gradient(180deg,rgba(0,209,255,0.12),rgba(0,209,255,0.04))]",

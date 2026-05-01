@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HASKE · Payment & Access</title>
+    <title>HASKEpay · Lightning Payment & Access</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;700&display=swap");
 
@@ -404,7 +404,7 @@
   <body>
     <header>
       <div class="nav">
-        <div class="logo"><span class="logo-mark" aria-hidden="true"></span> HASKE</div>
+        <div class="logo"><span class="logo-mark" aria-hidden="true"></span> HASKEpay</div>
         <div class="nav-links">
           <a href="checkout.html">Landing</a>
           <a href="#flow">Flow</a>
@@ -418,10 +418,10 @@
     <main>
       <section class="page-hero">
         <div>
-          <div class="logo"><span class="logo-mark" aria-hidden="true"></span> HASKE Access</div>
+          <div class="logo"><span class="logo-mark" aria-hidden="true"></span> HASKEpay Access</div>
           <h1>Track payment status and issue an access pass.</h1>
           <p>
-            Lightning Pass issues a signed access token after a Lightning payment settles. The
+            HASKEpay issues a signed access token after a Lightning payment settles. The
             token verifies offline with no accounts or ticket databases.
           </p>
           <button class="button primary" data-api="http://localhost:3000/api/invoice">Request invoice</button>
@@ -429,7 +429,7 @@
         <div class="stage" id="flow">
           <div class="stage-header">
             <div class="stage-badge">Demo</div>
-            <div>Payment & Access</div>
+            <div>Lightning Payment & Access</div>
           </div>
           <div class="stage-body">
             <div class="stage-title">Lightning payment to offline pass</div>
@@ -508,7 +508,7 @@
           <div class="demo-output" id="demoOutput">Waiting for invoice...</div>
         </div>
         <div class="side-card">
-          <h4>HASKE support</h4>
+          <h4>HASKEpay support</h4>
           <p class="footer">
             This demo focuses on settlement-triggered access tokens and offline verification.
           </p>
@@ -517,7 +517,7 @@
       </section>
 
       <section class="footer">
-        Lightning Pass · Payment status and access issuance
+        HASKEpay · Payment status and access issuance
       </section>
     </main>
 
@@ -614,7 +614,7 @@
             const response = await fetch(endpoint, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ amount_msat: 250000, description: "HASKE plan" }),
+              body: JSON.stringify({ amount_msat: 250000, description: "HASKEpay plan" }),
             });
             if (!response.ok) {
               throw new Error(`Request failed: ${response.status}`);

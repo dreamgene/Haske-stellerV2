@@ -13,17 +13,31 @@ pub fn parse_payment(record: &PaymentRecord) -> Result<PaymentEvent> {
     };
 
     Ok(PaymentEvent {
-        tx_hash: if record.transaction_hash.is_empty() {
+        session_id: String::new(),
+        rail: "stellar".to_string(),
+        settlement_id: if record.transaction_hash.is_empty() {
             record.id.clone()
         } else {
             record.transaction_hash.clone()
         },
-        source_account: record.from.clone(),
-        destination_account: record.to.clone(),
+        payment_hash: None,
+        preimage: None,
+        invoice: None,
+        tx_hash: Some(if record.transaction_hash.is_empty() {
+            record.id.clone()
+        } else {
+            record.transaction_hash.clone()
+        }),
+        source_account: Some(record.from.clone()),
+        destination_account: Some(record.to.clone()),
         amount: record.amount.clone(),
-        asset,
-        memo: record.memo.clone().unwrap_or_default(),
-        ledger_sequence: record.ledger.unwrap_or_default(),
+        currency: asset.clone(),
+        amount_msat: None,
+        asset: Some(asset),
+        memo: record.memo.clone(),
+        ledger_sequence: record.ledger,
         confirmed_at: 0,
+        settled_at: None,
+        provider_metadata: serde_json::Value::Null,
     })
 }

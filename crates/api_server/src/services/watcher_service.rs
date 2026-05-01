@@ -19,12 +19,7 @@ pub async fn run_payment_watcher(
 
         for session in pending {
             let payment = match payment_provider
-                .find_confirmed_payment(
-                    &session.payment_request.destination,
-                    &session.payment_request.memo,
-                    &session.payment_request.amount,
-                    &session.payment_request.asset,
-                )
+                .find_confirmed_payment(&session.payment_request)
                 .await
             {
                 Ok(payment) => payment,

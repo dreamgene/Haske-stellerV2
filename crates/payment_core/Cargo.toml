@@ -2,6 +2,8 @@
 name = "payment_core"
 version = "0.1.0"
 edition = "2021"
+description = "HASKEpay payment provider abstractions for Lightning-native settlement."
+license = "MIT"
 
 [dependencies]
 anyhow = { workspace = true }

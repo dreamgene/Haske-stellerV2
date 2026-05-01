@@ -4,9 +4,17 @@ use serde::{Deserialize, Serialize};
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct AccessToken {
     pub version: u8,
+    #[serde(default)]
+    pub product: String,
+    #[serde(default)]
+    pub rail: String,
     pub event_id: String,
     #[serde(default)]
     pub payment_hash: String,
+    #[serde(default)]
+    pub preimage: Option<String>,
+    #[serde(default)]
+    pub amount_msat: u64,
     #[serde(default)]
     pub tx_hash: String,
     #[serde(default)]
@@ -33,8 +41,12 @@ impl AccessToken {
     ) -> Self {
         Self {
             version,
+            product: "HASKEpay".to_string(),
+            rail: "lightning".to_string(),
             event_id: event_id.into(),
             payment_hash: payment_hash.into(),
+            preimage: None,
+            amount_msat: 0,
             tx_hash: String::new(),
             source: String::new(),
             amount: String::new(),
@@ -60,14 +72,46 @@ impl AccessToken {
     ) -> Self {
         Self {
             version,
+            product: "HASKEpay".to_string(),
+            rail: "stellar".to_string(),
             event_id: event_id.into(),
             payment_hash: String::new(),
+            preimage: None,
+            amount_msat: 0,
             tx_hash: tx_hash.into(),
             source: source.into(),
             amount: amount.into(),
             asset: asset.into(),
             memo: memo.into(),
             ledger,
+            expires_at,
+            nonce: nonce.into(),
+        }
+    }
+
+    pub fn new_lightning(
+        version: u8,
+        event_id: impl Into<String>,
+        payment_hash: impl Into<String>,
+        preimage: Option<String>,
+        amount_msat: u64,
+        expires_at: u64,
+        nonce: impl Into<String>,
+    ) -> Self {
+        Self {
+            version,
+            product: "HASKEpay".to_string(),
+            rail: "lightning".to_string(),
+            event_id: event_id.into(),
+            payment_hash: payment_hash.into(),
+            preimage,
+            amount_msat,
+            tx_hash: String::new(),
+            source: String::new(),
+            amount: amount_msat.to_string(),
+            asset: "msat".to_string(),
+            memo: String::new(),
+            ledger: 0,
             expires_at,
             nonce: nonce.into(),
         }

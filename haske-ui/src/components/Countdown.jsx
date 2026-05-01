@@ -8,23 +8,16 @@ function formatTime(seconds) {
 }
 
 export default function Countdown({ expiresAt, prefix }) {
-  const [time, setTime] = useState(0)
+  const [now, setNow] = useState(() => Math.floor(Date.now() / 1000))
 
   useEffect(() => {
-    if (!expiresAt) {
-      setTime(0)
-      return undefined
-    }
-
-    const update = () => {
-      const remaining = Math.max(0, expiresAt - Math.floor(Date.now() / 1000))
-      setTime(remaining)
-    }
-
-    update()
-    const interval = window.setInterval(update, 1000)
+    const interval = window.setInterval(() => {
+      setNow(Math.floor(Date.now() / 1000))
+    }, 1000)
     return () => window.clearInterval(interval)
-  }, [expiresAt])
+  }, [])
+
+  const time = expiresAt ? Math.max(0, expiresAt - now) : 0
 
   const isDanger = time <= 60
 

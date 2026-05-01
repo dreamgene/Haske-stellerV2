@@ -1,6 +1,6 @@
 const BADGE_CONFIG = {
-  stellar: {
-    label: "Secured by Stellar",
+  lightning: {
+    label: "Lightning settled",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -71,7 +71,7 @@ function Badge({ icon, label }) {
 }
 
 export default function TrustBadge({
-  items = ["stellar", "signed", "offline"],
+  items = ["lightning", "signed", "offline"],
   className = "",
 }) {
   return (

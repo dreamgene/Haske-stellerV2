@@ -131,7 +131,7 @@ impl ProofService {
         let expiry = self.inner.config.invoice_expiry_secs;
         let expiry_secs = u32::try_from(expiry).map_err(|_| ProofError::Internal)?;
         let amount_msat = amount_override_msat.unwrap_or(self.inner.config.amount_msat);
-        let memo = description.unwrap_or_else(|| "Lightning Pass access".to_string());
+        let memo = description.unwrap_or_else(|| "HASKEpay access".to_string());
 
         let invoice = self
             .inner

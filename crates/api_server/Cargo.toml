@@ -2,6 +2,8 @@
 name = "api_server"
 version = "0.1.0"
 edition = "2021"
+description = "HASKEpay Bitcoin Lightning-native API server for offline-verifiable access passes."
+license = "MIT"
 
 [dependencies]
 access_token = { path = "../access_token" }
@@ -9,12 +11,12 @@ anyhow = { workspace = true }
 axum = { workspace = true }
 base64 = { workspace = true }
 ed25519-dalek = { workspace = true }
+lightning_adapter = { path = "../lightning_adapter" }
 payment_core = { path = "../payment_core" }
 qr = { path = "../qr" }
 rand = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 shared_types = { path = "../shared_types" }
-stellar_adapter = { path = "../stellar_adapter" }
 tokio = { workspace = true }
 tower-http = { workspace = true }

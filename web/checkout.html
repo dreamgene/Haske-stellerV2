@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HASKE Checkout</title>
+    <title>HASKEpay Checkout</title>
     <style>
       :root {
         --bg: #0b0f14;
@@ -457,20 +457,20 @@
         <div class="panel header">
           <div class="logo">
             <div class="logo-mark">HS</div>
-            <div>HASKE <span style="color: var(--accent);">⚡</span></div>
+            <div>HASKEpay <span style="color: var(--accent);">⚡</span></div>
           </div>
-          <div class="badge">Secure Payment</div>
+          <div class="badge">Lightning</div>
         </div>
 
         <div class="panel stack">
           <div>
             <p class="eyebrow">Checkout</p>
-            <h1 class="event-title">HASKE Demo Event</h1>
+            <h1 class="event-title">HASKEpay Demo Event</h1>
           </div>
 
           <div class="price-line">
             <div class="price">&#8358;10,000</div>
-            <div class="price-alt">or 10 XLM</div>
+            <div class="price-alt">250 sats</div>
           </div>
 
           <div class="timer" id="countdownCard">
@@ -484,12 +484,12 @@
                 <div style="width: 220px; height: 220px; border-radius: 20px; background: linear-gradient(135deg, rgba(18, 24, 33, 0.04), rgba(18, 24, 33, 0.1)); display: grid; place-items: center; color: #51606f; font-weight: 800;">
                   Preparing QR
                 </div>
-                <div class="qr-label">Scan with any Stellar wallet</div>
+                <div class="qr-label">Scan with any Lightning wallet</div>
               </div>
               <div class="qr-image-wrap hidden" id="paymentQrWrap">
                 <img class="qr-image" id="paymentQrImage" alt="Payment QR" />
-                <div class="qr-label">Scan with any Stellar wallet</div>
-                <div class="qr-sub">Supports XLM / USDC</div>
+                <div class="qr-label">Scan with any Lightning wallet</div>
+                <div class="qr-sub">BOLT11 invoice</div>
               </div>
               <div class="qr-image-wrap hidden" id="accessQrWrap">
                 <img class="qr-image" id="accessQrImage" alt="Access pass QR" />
@@ -499,7 +499,7 @@
             </div>
 
             <div class="wallet-row">
-              <div class="wallet-support">Supports XLM / USDC</div>
+              <div class="wallet-support">BOLT11 invoice</div>
               <div class="button-row" id="checkoutActions">
                 <button class="button primary" id="walletButton" disabled>Open in Wallet</button>
               </div>
@@ -523,7 +523,7 @@
                   <code id="detailTxHash">n/a</code>
                 </div>
                 <div class="detail-item">
-                  <span>memo</span>
+                  <span>payment_hash</span>
                   <code id="detailMemo">n/a</code>
                 </div>
                 <div class="detail-item">
@@ -742,13 +742,13 @@
           setStatusAppearance("");
           elements.statusMain.textContent = "Waiting for payment...";
           elements.statusMeta.textContent = app.statusText || "Secure session active";
-          elements.statusNote.textContent = "Scan the QR or open it in a Stellar wallet to pay.";
+          elements.statusNote.textContent = "Scan the QR or open it in a Lightning wallet to pay.";
         }
 
         if (app.state === STATES.DETECTED) {
           setStatusAppearance("is-detected");
           elements.statusMain.innerHTML = 'Payment detected <span class="loader" aria-hidden="true"></span>';
-          elements.statusMeta.textContent = "Confirming on-chain";
+          elements.statusMeta.textContent = "Confirming settlement";
           elements.statusNote.textContent = "Still waiting... This can take up to 30 seconds.";
         }
 
@@ -757,9 +757,9 @@
           elements.statusMain.textContent = "Verified & Ready";
           elements.statusMeta.textContent = "Works offline";
           elements.statusNote.textContent = "Payment confirmed. Show this pass at entry.";
-          elements.detailTxHash.textContent = app.accessData?.tx_hash || "n/a";
-          elements.detailMemo.textContent = app.paymentData?.memo || "n/a";
-          elements.detailAsset.textContent = app.paymentData?.asset || "n/a";
+          elements.detailTxHash.textContent = app.accessData?.payment_hash || app.paymentData?.payment_hash || "n/a";
+          elements.detailMemo.textContent = app.paymentData?.payment_hash || "n/a";
+          elements.detailAsset.textContent = app.paymentData?.currency || "msat";
         }
 
         if (app.state === STATES.EXPIRED) {
@@ -826,8 +826,8 @@
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              amount: "10",
-              asset: "XLM",
+              amount: "250000",
+              currency: "msat",
               event_id: "haske-demo-event",
             }),
           });

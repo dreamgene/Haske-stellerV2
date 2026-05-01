@@ -1,349 +1,196 @@
-# HASKE Stellar Pass ⚡✨
+# HASKEpay
 
-**Payment-settled access that works offline.**
+**Bitcoin Lightning-settled access that works offline.**
 
-HASKE Stellar Pass is a minimal platform that turns a confirmed Stellar payment
-into a cryptographically verifiable access pass that can be checked
-**without internet access**.
+HASKEpay turns a settled Lightning payment into a signed access pass that can be
+verified without an internet connection at the gate.
 
 There are:
 - No user accounts
-- No ticket database at the gate
-- No online verification service during entry
+- No ticket database required at entry
+- No online gate verification dependency
 
-Access is derived directly from confirmed payment settlement.
-
----
+Access is issued only after payment settlement, then verified offline with the
+issuer public key.
 
 ## Scope
 
-**A Stellar payment confirms on-chain and yields a signed access pass that can be verified offline, with no accounts, dashboards, subscriptions, or online gate checks.**
-
 Current build targets:
-- Stellar payment request generation
-- Payment detection via Horizon account payment queries
-- Access token issuance after payment confirmation
-- QR encoding for the payment request and access pass
+- BOLT11 Lightning invoice generation
+- Payment settlement tracking through a payment provider abstraction
+- Access token issuance after settlement
+- QR encoding for invoices and access passes
 - Offline verifier CLI for signed tokens
-- Minimal Axum API for buyer-facing checkout flows
+- Minimal Axum API for checkout flows
+- Vite checkout UI for buyers
 
----
+The active API server is Lightning-first. The old Stellar adapter remains in the
+repository as legacy code during migration, but it is no longer the default
+runtime path.
 
-## Core Paradigm
+## Architecture
 
-Old Lightning model:
-- Payment proof = preimage
-- Settlement event = `InvoicePaid`
-- Trust anchor = HTLC settlement
-
-Current Stellar model:
-- Payment proof = transaction hash + ledger inclusion
-- Settlement event = confirmed payment operation
-- Trust anchor = Stellar consensus + issuer signature
-
----
-
-## System Architecture
-
+```text
 Buyer Phone
-|
-| (XLM / token payment)
-v
-Stellar Network
-|
-| (payment confirmed)
-v
-Rust API (Axum)
-|  - create payment request
-|  - monitor address + memo
-|  - issue signed access token
-v
-Access Token (Ed25519)
-|
-v
-QR Encoder
-|
-v
-Gate Verifier (offline CLI)
+  |
+  | Bitcoin Lightning invoice payment
+  v
+Lightning node / Lightning provider
+  |
+  | invoice status check or invoice subscription
+  v
+Rust API
+  - creates payment sessions
+  - stores invoice + payment_hash
+  - checks/subscribes for invoice settlement
+  - issue signed access token
+  v
+Signed access token
+  |
+  v
+QR encoder
+  |
+  v
+Offline verifier CLI
+```
 
-Data flow from payment to gate entry:
-- Buyer requests a payment session from the API.
-- API returns a Stellar destination address, amount, asset, memo, and wallet QR payload.
-- Buyer pays using a Stellar wallet.
-- API polls Horizon for a confirmed payment matching destination, memo, amount, and asset.
-- API builds an access token from the confirmed payment details.
-- API signs the token with an Ed25519 private key.
-- Buyer receives the signed token and QR.
-- Gate verifier validates the signature offline and checks expiry.
+Core promise:
 
-What runs online vs offline:
-- Online: Axum API, Stellar Horizon lookups, token signing service, QR generation.
-- Offline: verifier CLI, embedded or supplied Ed25519 public key, token validation logic.
+**A confirmed payment becomes a signed access pass that verifies offline.**
 
----
+Payment flow:
+- Buyer opens checkout on a phone.
+- Rust API asks a Lightning node/provider for a BOLT11 invoice.
+- Buyer pays the invoice from a Lightning wallet.
+- Lightning node/provider reports settlement by invoice status check or invoice
+  subscription.
+- Rust API matches settlement using the Lightning invoice and `payment_hash`.
+- Rust API signs an access token containing Lightning settlement data.
+- QR encoder turns the signed token into an access-pass QR.
+- Offline verifier CLI validates the signature and expiry without a network
+  call, user account, gate-side database, or online gate check.
 
-## Workspace Layout
+Online components:
+- `crates/api_server`: Axum routes, session state, watcher loop, access issuance
+- `crates/payment_core`: rail-neutral payment provider trait
+- `crates/qr`: QR rendering helpers
 
-The workspace is now split around a pluggable payment layer:
+Offline components:
+- `crates/access_token`: signed access token formats and verification helpers
+- `crates/verifier_cli`: offline QR/token verifier
 
-- `crates/api_server`
-  Axum server, routes, watcher loop, in-memory session state, and token issuance orchestration.
-- `crates/payment_core`
-  Payment abstraction traits used by the API layer.
-- `crates/stellar_adapter`
-  Stellar-specific payment request creation, memo generation, Horizon client logic, and payment parsing.
-- `crates/access_token`
-  Signed token types plus signing and verification helpers.
-- `crates/qr`
-  ASCII and PNG QR generation helpers.
-- `crates/shared_types`
-  Shared request/response structs and payment event types.
-- `crates/verifier_cli`
-  Offline verifier for signed access tokens and QR images.
+Legacy/reference components:
+- `crates/stellar_adapter`: previous Stellar/Horizon rail
+- `crates/lightning_node`: older Breez-based Lightning server path, excluded
+  from the default workspace build because it requires extra native tooling such
+  as `protoc`
+- `vendor/ldk-node`: vendored LDK reference code
 
-The legacy Lightning implementation still exists in `crates/lightning_node` as a reference path during migration, but the new architecture is centered on `api_server` + `stellar_adapter`.
+## API
 
----
+`POST /api/payment-request`
 
-## New API
+Creates a Lightning payment request.
 
-Endpoints exposed by the new server:
+Default request:
 
-- `POST /api/payment-request`
-  Creates a Stellar payment request and returns destination, amount, asset, memo, and QR payload.
-- `GET /api/payment-status/:session_id`
-  Returns whether payment has been detected and, if available, the issued access token and QR.
-- `GET /api/access-token/:session_id`
-  Returns the same token-bearing status response for access retrieval flows.
+```json
+{
+  "amount": "250000",
+  "currency": "msat",
+  "event_id": "haske-demo-event"
+}
+```
 
-Implementation entry point:
-- `crates/api_server/src/main.rs`
+Response shape:
 
-Route handlers:
-- `crates/api_server/src/routes/payment.rs`
-- `crates/api_server/src/routes/status.rs`
-- `crates/api_server/src/routes/access.rs`
+```json
+{
+  "session_id": "abc123",
+  "rail": "lightning",
+  "amount": "250000",
+  "currency": "msat",
+  "amount_msat": 250000,
+  "payment_request": "lnbc...",
+  "invoice": "lnbc...",
+  "payment_hash": "...",
+  "qr_payload": "lnbc...",
+  "qr_png": "data:image/png;base64,...",
+  "request_expires_at": 1735689750
+}
+```
 
-Background watcher:
-- `crates/api_server/src/services/watcher_service.rs`
+`GET /api/payment-status/:session_id`
 
----
+Returns `waiting`, `confirmed`, or `expired`. When confirmed, the response
+includes the signed access token and QR data.
 
-## Stellar Payment Detection
+`GET /api/access-token/:session_id`
 
-Instead of a Lightning node, HASKE now uses Stellar account monitoring.
+Returns the same token-bearing status response for retrieval flows.
 
-Payment request format:
-- Destination account
-- Amount
-- Asset
-- Unique memo
+## Access Tokens
 
-Detection strategy:
-- Generate a unique memo per payment session.
-- Query Horizon for recent payments to the configured destination account.
-- Match on destination, memo, amount, and asset.
-- Only issue an access token after a confirmed matching payment is found.
+HASKEpay tokens are Ed25519-signed payloads. Lightning tokens use token version
+`2` and include:
 
-Current provider implementation:
-- `crates/stellar_adapter/src/provider.rs`
-- `crates/stellar_adapter/src/client.rs`
-- `crates/stellar_adapter/src/parser.rs`
-- `crates/stellar_adapter/src/memo.rs`
-
-Default Horizon endpoint:
-- `https://horizon-testnet.stellar.org`
-
----
-
-## Access Token Format
-
-The access token is a signed JSON payload. It is designed for offline verification and now anchors proof to Stellar payment data.
-
-Current token fields:
-- `version`
+- `product`
+- `rail`
 - `event_id`
-- `tx_hash`
-- `source`
-- `amount`
-- `asset`
-- `memo`
-- `ledger`
+- `payment_hash`
+- `preimage`, when available from the provider
+- `amount_msat`
+- `invoice`
+- `settled_at`
 - `expires_at`
 - `nonce`
 
-Compatibility note:
-- The token struct still retains an optional `payment_hash` field so older Lightning-shaped tokens can coexist during migration.
+Offline verification validates the issuer signature and expiry. If future
+providers include a payment preimage in the token, the verifier can additionally
+check that the preimage hashes to the `payment_hash`.
 
-Token signing helpers live in:
-- `crates/access_token/src/sign.rs`
-- `crates/access_token/src/token.rs`
-- `crates/access_token/src/verify.rs`
+## Local Development
 
-Example token payload before signing:
+Run the API:
 
-```json
-{
-  "version": 1,
-  "event_id": "demo-event",
-  "tx_hash": "3d5c...abc",
-  "source": "GABC...",
-  "amount": "10",
-  "asset": "XLM",
-  "memo": "A9k3Lm2Qx7pR",
-  "ledger": 123456,
-  "expires_at": 1735689750,
-  "nonce": "q8Y2JkP4Ls9Vb0Xr"
-}
+```bash
+HASKEPAY_MOCK_SETTLE_AFTER_SECS=6 cargo run -p api_server
 ```
 
-Signed token wire format:
+Without `HASKEPAY_MOCK_SETTLE_AFTER_SECS`, invoices remain pending. That is
+intentional for provider integration work.
 
-```json
-{
-  "token": { "...": "..." },
-  "signature": "<base64>"
-}
+Run the UI:
+
+```bash
+cd haske-ui
+npm run dev
 ```
 
----
+Useful checks:
 
-## QR Generation
+```bash
+cargo check --workspace
+cargo test --workspace
+cd haske-ui && npm run lint && npm run build
+```
 
-Requirements covered:
-- Terminal QR for development
-- PNG QR for demos and browser display
-- Deterministic output for the same payload
+## Migration Notes
 
-Implementation lives in:
-- `crates/qr/src/lib.rs`
+The migration from the previous Stellar-branded build to HASKEpay is
+intentionally not a simple rename. HASKEpay is Bitcoin Lightning-native.
 
-Two kinds of QR payloads are used:
-- Stellar wallet payment request QR such as `web+stellar:pay?...`
-- Signed access token QR for offline gate validation
+Concept replacements:
+- Horizon polling becomes Lightning invoice status checking or invoice
+  subscription.
+- Stellar destination + memo becomes Lightning invoice + `payment_hash`.
+- `tx_hash`, ledger, asset, and memo settlement fields become `payment_hash`,
+  preimage when available, `amount_msat`, invoice, and `settled_at`.
 
----
+HASKEpay treats Bitcoin Lightning as the primary rail and tracks settlement
+through Lightning invoice identity, primarily `payment_hash`.
 
-## Offline Verifier CLI
-
-Behavior:
-- Accepts a token string or a QR image
-- Verifies Ed25519 signature
-- Checks expiry
-- Prints `VALID` or `INVALID`
-- Makes no network calls
-
-CLI examples:
-- `verifier --token "<signed_token_json>"`
-- `verifier --qr-image path/to/qr.png`
-- `verifier --public_key path/to/public_key.txt --token "<signed_token_json>"`
-
-Implementation lives in:
-- `crates/verifier_cli/src/main.rs`
-
-Note:
-- The CLI currently expects either `--public_key` or a rebuilt binary with an embedded real public key value.
-
----
-
-## Configuration
-
-New server environment variables:
-
-- `STELLAR_DESTINATION_ADDRESS`
-  Required. Stellar account that receives payments.
-- `STELLAR_HORIZON_URL`
-  Optional. Defaults to `https://horizon-testnet.stellar.org`.
-- `HASKE_SIGNING_KEY_BASE64`
-  Optional but recommended. Base64-encoded 32-byte Ed25519 secret key seed for stable signing.
-- `HASKE_TOKEN_EXPIRY_SECS`
-  Optional. Defaults to `300`.
-- `HASKE_WATCH_INTERVAL_SECS`
-  Optional. Defaults to `3`.
-
-Behavior note:
-- If `HASKE_SIGNING_KEY_BASE64` is not set, the API generates an ephemeral signing key on startup. That is fine for quick demos but invalidates previously issued passes after restart.
-
----
-
-## Threat Model
-
-- Fake payment claim: issue access only after Horizon confirms a matching payment for destination, memo, amount, and asset.
-- Screenshot reuse: short token expiry limits how long a captured access QR remains usable.
-- Replay attack: nonce and event scoping reduce simple token reuse, though preventing repeat entry without a database remains intentionally out of scope for this demo.
-- Memo collision: unique generated memos keep payment sessions distinct.
-- Fake QR codes: Ed25519 signatures ensure only issuer-signed passes validate offline.
-- Clock drift: verifier devices should allow small time tolerance and stay roughly synced.
-
----
-
-## Demo Narrative
-
-One sentence:
-- This platform turns a confirmed blockchain payment into a time-limited access pass that still verifies offline at the door.
-
-One paragraph:
-- A guest opens a checkout screen, pays a Stellar request from their wallet, and receives a signed QR pass moments later. Staff at the venue can scan that pass with no network connection because the verifier only needs the issuer public key and the signed token payload. The result is a smooth pay-to-enter flow that keeps working during poor connectivity.
-
-Simple diagram:
-- Phone payment -> signed QR pass -> offline door scanner -> entry
-
----
-
-## Demo Script
-
-Setup context:
-- "This is a pay-to-enter flow where the gate has no internet, but the pass still verifies."
-
-Show payment:
-- "The buyer gets a Stellar payment request with an amount and unique memo."
-- "Once the payment confirms, the system issues an access pass tied to that transaction."
-
-Verify access offline:
-- "Now the gate device scans the signed QR."
-- "It verifies locally, with no Horizon call and no server lookup."
-
-Wrap-up:
-- "So the venue gets reliable entry even during connectivity problems, and the payment still maps cleanly to access."
-
----
-
-## What This Demonstrates
-
-- Blockchain payment-to-access conversion using Stellar
-- Cryptographically signed access passes
-- Offline verification at the point of entry
-- A payment abstraction that can support additional chains later
-
-This repository is built as an **investor demo**, not a full production system.
-
----
-
-## Positioning
-
-HASKE is no longer best thought of as a Lightning-only project.
-
-It is better described as:
-
-**A proof-of-payment to access protocol, with Stellar as the current payment rail.**
-
-That opens the path to:
-- XLM
-- USDC on Stellar
-- Future Lightning reintroduction through the same payment abstraction
-- Other chains through additional adapters
-
----
-
-## Current Limitations
-
-- Session state is in-memory and does not survive restarts.
-- The verifier does not yet ship with a real embedded public key by default.
-- The old Lightning crate is still present in the repo during migration.
-- The frontend checkout pages still need to be updated to call the new Stellar endpoints.
-
----
-
-## License
-
-MIT
+The default workspace excludes `crates/lightning_node` for now because that
+legacy crate pulls dependencies that require `protoc`. Bring it back only after
+deciding whether the production provider should be Breez, LDK node, CLN, LND, or
+a trait-backed adapter supporting several backends.

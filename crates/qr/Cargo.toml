@@ -2,6 +2,8 @@
 name = "qr"
 version = "0.1.0"
 edition = "2021"
+description = "QR rendering helpers for HASKEpay Lightning invoices and access passes."
+license = "MIT"
 
 [dependencies]
 anyhow = { workspace = true }

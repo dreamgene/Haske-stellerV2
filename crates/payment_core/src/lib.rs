@@ -9,9 +9,6 @@ pub trait PaymentProvider: Send + Sync {
 
     async fn find_confirmed_payment(
         &self,
-        destination: &str,
-        memo: &str,
-        amount: &str,
-        asset: &str,
+        request: &PaymentRequest,
     ) -> Result<Option<PaymentEvent>>;
 }

@@ -3,21 +3,25 @@ const DEFAULT_TIMEOUT_MS = 10_000
 const MAX_RETRIES = 3
 const RETRYABLE_STATUS_CODES = new Set([408, 425, 429, 500, 502, 503, 504])
 
-export type PaymentAsset = "XLM" | "USDC" | string
-
 export type CreatePaymentRequest = {
   amount: string
-  asset: PaymentAsset
+  currency: string
   event_id: string
 }
 
 export type PaymentRequest = {
   session_id: string
-  destination: string
+  rail: string
   amount: string
-  asset: string
-  memo: string
+  currency: string
+  amount_msat?: number | null
+  payment_request: string
   qr_payload: string
+  invoice?: string | null
+  payment_hash?: string | null
+  destination?: string | null
+  asset?: string | null
+  memo?: string | null
   expires_at?: number
   request_expires_at?: number
 }
@@ -31,6 +35,8 @@ export type PaymentStatusResponse = {
   request_expires_at: number
   expires_at: number
   payment_request: PaymentRequest
+  settlement_id: string | null
+  payment_hash: string | null
   tx_hash: string | null
   access_token: AccessToken
   access_qr_png: string | null
@@ -39,10 +45,16 @@ export type PaymentStatusResponse = {
 
 export type CreatePaymentResponse = {
   session_id: string
-  destination: string
+  rail: string
   amount: string
-  asset: string
-  memo: string
+  currency: string
+  amount_msat?: number | null
+  payment_request: string
+  invoice?: string | null
+  payment_hash?: string | null
+  destination?: string | null
+  asset?: string | null
+  memo?: string | null
   qr_payload: string
   qr_png: string
   request_expires_at: number
@@ -198,10 +210,10 @@ function isPaymentRequest(value: unknown): value is PaymentRequest {
   return (
     isRecord(value) &&
     typeof value.session_id === "string" &&
-    typeof value.destination === "string" &&
+    typeof value.rail === "string" &&
     typeof value.amount === "string" &&
-    typeof value.asset === "string" &&
-    typeof value.memo === "string" &&
+    typeof value.currency === "string" &&
+    typeof value.payment_request === "string" &&
     typeof value.qr_payload === "string"
   )
 }
@@ -210,10 +222,10 @@ function isCreatePaymentResponse(value: unknown): value is CreatePaymentResponse
   return (
     isRecord(value) &&
     typeof value.session_id === "string" &&
-    typeof value.destination === "string" &&
+    typeof value.rail === "string" &&
     typeof value.amount === "string" &&
-    typeof value.asset === "string" &&
-    typeof value.memo === "string" &&
+    typeof value.currency === "string" &&
+    typeof value.payment_request === "string" &&
     typeof value.qr_payload === "string" &&
     typeof value.qr_png === "string" &&
     typeof value.request_expires_at === "number"
@@ -338,8 +350,8 @@ export function createApiClient(config: ApiClientConfig = {}) {
   return {
     createPayment(
       payload: CreatePaymentRequest = {
-        amount: "10",
-        asset: "XLM",
+        amount: "250000",
+        currency: "msat",
         event_id: "haske-demo-event",
       },
     ) {

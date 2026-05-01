@@ -1,7 +1,9 @@
 {
-  "name": "haske-ui",
+  "name": "haskepay-ui",
   "private": true,
   "version": "0.0.0",
+  "description": "HASKEpay Bitcoin Lightning-native checkout UI for offline-verifiable access passes.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

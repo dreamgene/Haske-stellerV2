@@ -38,25 +38,40 @@ impl PaymentProvider for StellarProvider {
             "web+stellar:pay?destination={}&amount={}&memo={}",
             self.config.destination_address, request.amount, memo
         );
+        let asset = if request.asset.is_empty() {
+            request.currency.clone()
+        } else {
+            request.asset.clone()
+        };
 
         Ok(PaymentRequest {
             session_id,
-            destination: self.config.destination_address.clone(),
+            rail: "stellar".to_string(),
             amount: request.amount,
-            asset: request.asset,
-            memo,
+            currency: asset.clone(),
+            amount_msat: None,
+            payment_request: qr_payload.clone(),
             qr_payload,
+            invoice: None,
+            payment_hash: None,
+            destination: Some(self.config.destination_address.clone()),
+            asset: Some(asset),
+            memo: Some(memo),
             expires_at: 0,
         })
     }
 
     async fn find_confirmed_payment(
         &self,
-        destination: &str,
-        memo: &str,
-        amount: &str,
-        asset: &str,
+        request: &PaymentRequest,
     ) -> Result<Option<PaymentEvent>> {
+        let Some(destination) = request.destination.as_deref() else {
+            return Ok(None);
+        };
+        let Some(memo) = request.memo.as_deref() else {
+            return Ok(None);
+        };
+        let asset = request.asset.as_deref().unwrap_or(&request.currency);
         let payments = self.client.payments_for_account(destination).await?;
         for record in payments.embedded.records {
             if !record.transaction_successful || record.record_type != "payment" {
@@ -64,10 +79,14 @@ impl PaymentProvider for StellarProvider {
             }
 
             let event = parse_payment(&record)?;
-            if event.destination_account == destination
-                && event.memo == memo
-                && event.amount == amount
-                && event.asset.eq_ignore_ascii_case(asset)
+            if event.destination_account.as_deref() == Some(destination)
+                && event.memo.as_deref() == Some(memo)
+                && event.amount == request.amount
+                && event
+                    .asset
+                    .as_deref()
+                    .unwrap_or_default()
+                    .eq_ignore_ascii_case(asset)
             {
                 return Ok(Some(event));
             }

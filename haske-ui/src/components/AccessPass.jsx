@@ -67,26 +67,26 @@ export default function AccessPass() {
         <div className="mt-4 space-y-3 text-left text-sm text-slate-300">
           <div>
             <div className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
-              tx_hash
+              payment_hash
             </div>
             <code className="mt-1 block break-all text-slate-100">
-              {accessData?.tx_hash || "n/a"}
+              {accessData?.payment_hash || paymentData?.payment_hash || "n/a"}
             </code>
           </div>
           <div>
             <div className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
-              memo
+              invoice
             </div>
             <code className="mt-1 block break-all text-slate-100">
-              {paymentData?.memo || "n/a"}
+              {paymentData?.invoice || paymentData?.payment_request || "n/a"}
             </code>
           </div>
           <div>
             <div className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
-              asset
+              amount
             </div>
             <code className="mt-1 block break-all text-slate-100">
-              {paymentData?.asset || "n/a"}
+              {paymentData?.amount_msat ? `${paymentData.amount_msat} msat` : "n/a"}
             </code>
           </div>
         </div>

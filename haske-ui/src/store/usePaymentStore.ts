@@ -10,12 +10,18 @@ export type PaymentStatus =
 
 export type PaymentData = {
   session_id?: string
-  destination?: string
+  rail?: string
   qr_payload?: string
   qr_png?: string
   amount?: string
-  asset?: string
-  memo?: string
+  currency?: string
+  amount_msat?: number | null
+  payment_request?: string
+  invoice?: string | null
+  payment_hash?: string | null
+  destination?: string | null
+  asset?: string | null
+  memo?: string | null
   request_expires_at?: number
   expires_at?: number
   [key: string]: unknown
@@ -30,6 +36,8 @@ export type AccessData = {
   request_expires_at?: number
   expires_at?: number
   payment_request?: PaymentData
+  settlement_id?: string | null
+  payment_hash?: string | null
   tx_hash?: string | null
   access_token?: AccessToken
   access_qr_png?: string | null

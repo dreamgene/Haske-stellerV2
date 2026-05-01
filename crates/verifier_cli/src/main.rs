@@ -13,7 +13,7 @@ use rqrr::PreparedImage;
 
 #[derive(Parser)]
 #[command(name = "verifier")]
-#[command(about = "Verify a Lightning Pass access token offline")]
+#[command(about = "Verify a HASKEpay access token offline")]
 struct Args {
     #[arg(long, value_name = "PATH")]
     public_key: Option<PathBuf>,

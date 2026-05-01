@@ -16,11 +16,11 @@ use api_server::routes::payment::create_payment_request;
 use api_server::routes::status::get_payment_status;
 use api_server::services::{run_payment_watcher, AccessService, PaymentService};
 use api_server::state::AppState;
-use stellar_adapter::{StellarConfig, StellarProvider};
+use lightning_adapter::LightningAdapter;
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    let payment_provider = Arc::new(StellarProvider::new(load_stellar_config()?));
+    let payment_provider = Arc::new(LightningAdapter::mock(read_mock_settle_after_secs()));
     let signing_key = load_signing_key()?;
     let access_service = AccessService::new(signing_key);
     let payment_service = PaymentService::new(read_u64_env("HASKE_TOKEN_EXPIRY_SECS", 5 * 60));
@@ -55,13 +55,10 @@ async fn main() -> Result<()> {
     Ok(())
 }
 
-fn load_stellar_config() -> Result<StellarConfig> {
-    Ok(StellarConfig {
-        horizon_url: std::env::var("STELLAR_HORIZON_URL")
-            .unwrap_or_else(|_| "https://horizon-testnet.stellar.org".to_string()),
-        destination_address: std::env::var("STELLAR_DESTINATION_ADDRESS")
-            .map_err(|_| anyhow!("missing STELLAR_DESTINATION_ADDRESS env var"))?,
-    })
+fn read_mock_settle_after_secs() -> Option<u64> {
+    std::env::var("HASKEPAY_MOCK_SETTLE_AFTER_SECS")
+        .ok()
+        .and_then(|value| value.parse::<u64>().ok())
 }
 
 fn load_signing_key() -> Result<SigningKey> {

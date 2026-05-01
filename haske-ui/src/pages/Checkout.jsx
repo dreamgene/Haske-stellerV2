@@ -12,7 +12,7 @@ export default function Checkout() {
   const { restartSession } = useSessionRecovery()
   const { status, paymentData, requestExpiresAt, error } = usePaymentStore()
 
-  const walletHref = paymentData?.qr_payload
+  const walletHref = paymentData?.invoice ? `lightning:${paymentData.invoice}` : paymentData?.qr_payload
   const showRetry = status === "EXPIRED" || status === "ERROR"
 
   return (
@@ -50,7 +50,7 @@ export default function Checkout() {
                     </p>
                     <div className="space-y-3">
                       <h2 className="max-w-[12ch] text-[2.6rem] font-black leading-[0.95] tracking-[-0.05em] text-white sm:max-w-none sm:text-[3.2rem]">
-                        HASKE Demo Event
+                        HASKEpay Demo Event
                       </h2>
                       <div className="rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] px-4 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
                         <div className="flex items-end justify-between gap-3">
@@ -63,7 +63,7 @@ export default function Checkout() {
                             </div>
                           </div>
                           <div className="rounded-full border border-white/10 bg-black/10 px-3 py-1.5 text-sm font-semibold text-slate-300">
-                            or 10 XLM
+                            250 sats
                           </div>
                         </div>
                       </div>
