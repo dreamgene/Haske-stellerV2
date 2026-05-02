@@ -1,7 +1,6 @@
 # HASKEpay Backlog
 
-This backlog replaces the old Stellar migration issue dump. HASKEpay is now a
-Lightning-first project.
+HASKEpay is a Lightning-first project.
 
 ## 1. Choose the production Lightning backend
 
@@ -26,31 +25,26 @@ settlement handling, expired sessions, and matching by invoice + `payment_hash`.
 Acceptance: `access_token` and `verifier_cli` verify HASKEpay Lightning tokens
 with valid signatures and reject expired or tampered payloads.
 
-## 5. Decide legacy Stellar support
-
-Acceptance: either remove `crates/stellar_adapter` or gate it behind an explicit
-legacy feature with documented compatibility limits.
-
-## 6. Decide fate of `crates/lightning_node`
+## 5. Decide fate of `crates/lightning_node`
 
 Acceptance: either reintegrate it as a maintained provider crate or move it to
 an archive path outside the default workspace.
 
-## 7. Add durable session storage
+## 6. Add durable session storage
 
 Acceptance: pending and settled sessions survive API restarts.
 
-## 8. Add issuer key management docs
+## 7. Add issuer key management docs
 
 Acceptance: operators can generate, store, rotate, and publish Ed25519 issuer
 keys safely.
 
-## 9. Add frontend settlement states
+## 8. Add frontend settlement states
 
 Acceptance: checkout distinguishes invoice created, payment pending, settlement
 confirmed, pass issued, expired, and provider failure.
 
-## 10. Add end-to-end demo
+## 9. Add end-to-end demo
 
 Acceptance: a documented local demo starts API + UI, creates a Lightning invoice,
 simulates or performs settlement, and verifies the resulting pass offline.

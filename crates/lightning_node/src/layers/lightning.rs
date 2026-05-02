@@ -19,7 +19,7 @@ pub trait LightningGateway: Send + Sync {
     async fn create_invoice(
         &self,
         amount_msat: u64,
-        memo: &str,
+        description: &str,
         expiry_secs: u32,
     ) -> Result<LightningInvoice>;
     async fn new_onchain_address(&self) -> Result<String>;
@@ -42,12 +42,12 @@ impl LightningGateway for BreezGateway {
     async fn create_invoice(
         &self,
         amount_msat: u64,
-        memo: &str,
+        description: &str,
         expiry_secs: u32,
     ) -> Result<LightningInvoice> {
         let req = ReceivePaymentRequest {
             amount_msat,
-            description: memo.to_string(),
+            description: description.to_string(),
             expiry: Some(expiry_secs.into()),
             ..Default::default()
         };

@@ -519,16 +519,16 @@
               <summary>View details</summary>
               <div class="detail-grid">
                 <div class="detail-item">
-                  <span>tx_hash</span>
-                  <code id="detailTxHash">n/a</code>
+                  <span>invoice</span>
+                  <code id="detailInvoice">n/a</code>
                 </div>
                 <div class="detail-item">
                   <span>payment_hash</span>
-                  <code id="detailMemo">n/a</code>
+                  <code id="detailPaymentHash">n/a</code>
                 </div>
                 <div class="detail-item">
-                  <span>asset</span>
-                  <code id="detailAsset">n/a</code>
+                  <span>amount_msat</span>
+                  <code id="detailAmountMsat">n/a</code>
                 </div>
               </div>
             </details>
@@ -585,9 +585,9 @@
         statusMeta: document.getElementById("statusMeta"),
         statusNote: document.getElementById("statusNote"),
         accessMeta: document.getElementById("accessMeta"),
-        detailTxHash: document.getElementById("detailTxHash"),
-        detailMemo: document.getElementById("detailMemo"),
-        detailAsset: document.getElementById("detailAsset"),
+        detailInvoice: document.getElementById("detailInvoice"),
+        detailPaymentHash: document.getElementById("detailPaymentHash"),
+        detailAmountMsat: document.getElementById("detailAmountMsat"),
         failureActions: document.getElementById("failureActions"),
         retryButton: document.getElementById("retryButton"),
         newPassButton: document.getElementById("newPassButton"),
@@ -757,9 +757,9 @@
           elements.statusMain.textContent = "Verified & Ready";
           elements.statusMeta.textContent = "Works offline";
           elements.statusNote.textContent = "Payment confirmed. Show this pass at entry.";
-          elements.detailTxHash.textContent = app.accessData?.payment_hash || app.paymentData?.payment_hash || "n/a";
-          elements.detailMemo.textContent = app.paymentData?.payment_hash || "n/a";
-          elements.detailAsset.textContent = app.paymentData?.currency || "msat";
+          elements.detailInvoice.textContent = app.paymentData?.invoice || app.paymentData?.payment_request || "n/a";
+          elements.detailPaymentHash.textContent = app.accessData?.payment_hash || app.paymentData?.payment_hash || "n/a";
+          elements.detailAmountMsat.textContent = app.paymentData?.amount_msat || "n/a";
         }
 
         if (app.state === STATES.EXPIRED) {

@@ -3,10 +3,13 @@ use serde_json::Value;
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct CreatePaymentRequest {
-    pub amount: String,
+    #[serde(default)]
+    pub amount_msat: Option<u64>,
+    #[serde(default)]
+    pub amount_sats: Option<u64>,
     pub currency: String,
     #[serde(default)]
-    pub asset: String,
+    pub metadata: Value,
     pub event_id: String,
 }
 
@@ -14,22 +17,21 @@ pub struct CreatePaymentRequest {
 pub struct PaymentRequest {
     pub session_id: String,
     pub rail: String,
-    pub amount: String,
     pub currency: String,
     #[serde(default)]
     pub amount_msat: Option<u64>,
+    #[serde(default)]
+    pub amount_sats: Option<u64>,
     pub payment_request: String,
     pub qr_payload: String,
     #[serde(default)]
     pub invoice: Option<String>,
     #[serde(default)]
+    pub bolt11: Option<String>,
+    #[serde(default)]
     pub payment_hash: Option<String>,
     #[serde(default)]
-    pub destination: Option<String>,
-    #[serde(default)]
-    pub asset: Option<String>,
-    #[serde(default)]
-    pub memo: Option<String>,
+    pub metadata: Value,
     pub expires_at: u64,
 }
 
@@ -45,22 +47,11 @@ pub struct PaymentEvent {
     pub preimage: Option<String>,
     #[serde(default)]
     pub invoice: Option<String>,
-    #[serde(default)]
-    pub tx_hash: Option<String>,
-    #[serde(default)]
-    pub source_account: Option<String>,
-    #[serde(default)]
-    pub destination_account: Option<String>,
-    pub amount: String,
     pub currency: String,
     #[serde(default)]
     pub amount_msat: Option<u64>,
     #[serde(default)]
-    pub asset: Option<String>,
-    #[serde(default)]
-    pub memo: Option<String>,
-    #[serde(default)]
-    pub ledger_sequence: Option<u32>,
+    pub amount_sats: Option<u64>,
     pub confirmed_at: u64,
     #[serde(default)]
     pub settled_at: Option<u64>,
@@ -78,7 +69,10 @@ pub struct PaymentStatusResponse {
     pub payment_request: PaymentRequest,
     pub settlement_id: Option<String>,
     pub payment_hash: Option<String>,
-    pub tx_hash: Option<String>,
+    pub invoice: Option<String>,
+    pub bolt11: Option<String>,
+    pub amount_msat: Option<u64>,
+    pub qr_payload: String,
     pub access_token: Option<Value>,
     pub access_qr_png: Option<String>,
     pub access_qr_ascii: Option<String>,

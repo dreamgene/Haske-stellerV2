@@ -19,9 +19,6 @@ export type PaymentRequest = {
   qr_payload: string
   invoice?: string | null
   payment_hash?: string | null
-  destination?: string | null
-  asset?: string | null
-  memo?: string | null
   expires_at?: number
   request_expires_at?: number
 }
@@ -37,7 +34,6 @@ export type PaymentStatusResponse = {
   payment_request: PaymentRequest
   settlement_id: string | null
   payment_hash: string | null
-  tx_hash: string | null
   access_token: AccessToken
   access_qr_png: string | null
   access_qr_ascii: string | null
@@ -52,9 +48,6 @@ export type CreatePaymentResponse = {
   payment_request: string
   invoice?: string | null
   payment_hash?: string | null
-  destination?: string | null
-  asset?: string | null
-  memo?: string | null
   qr_payload: string
   qr_png: string
   request_expires_at: number

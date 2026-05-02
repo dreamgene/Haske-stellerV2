@@ -107,3 +107,87 @@ fn now_secs() -> u64 {
         .unwrap_or_default()
         .as_secs()
 }
+
+#[cfg(test)]
+mod tests {
+    use crate::{sign::generate_keypair, sign_token, AccessToken};
+
+    use super::*;
+
+    #[test]
+    fn verifies_signed_lightning_settlement_token() {
+        let signing_key = generate_keypair();
+        let token = AccessToken::new_lightning(
+            2,
+            "event-1",
+            "payment-hash",
+            Some("preimage".to_string()),
+            Some("lnbc2500n1test".to_string()),
+            250_000,
+            1_700_000_000,
+            1_800_000_000,
+            "nonce-1",
+        );
+
+        let signed = sign_token(token, &signing_key).unwrap();
+
+        verify_signed_token_at(&signed, &signing_key.verifying_key(), 1_700_000_001).unwrap();
+        assert_eq!(signed.token.version, 2);
+        assert_eq!(signed.token.event_id, "event-1");
+        assert_eq!(signed.token.payment_hash, "payment-hash");
+        assert_eq!(signed.token.preimage.as_deref(), Some("preimage"));
+        assert_eq!(signed.token.invoice.as_deref(), Some("lnbc2500n1test"));
+        assert_eq!(signed.token.amount_msat, 250_000);
+        assert_eq!(signed.token.settled_at, 1_700_000_000);
+    }
+
+    #[test]
+    fn rejects_tampered_lightning_token() {
+        let signing_key = generate_keypair();
+        let mut signed = sign_token(
+            AccessToken::new_lightning(
+                2,
+                "event-1",
+                "payment-hash",
+                None,
+                Some("lnbc2500n1test".to_string()),
+                250_000,
+                1_700_000_000,
+                1_800_000_000,
+                "nonce-1",
+            ),
+            &signing_key,
+        )
+        .unwrap();
+
+        signed.token.payment_hash = "different-payment-hash".to_string();
+
+        let err = verify_signed_token_at(&signed, &signing_key.verifying_key(), 1_700_000_001)
+            .unwrap_err();
+        assert!(matches!(err, VerifyError::InvalidSignature));
+    }
+
+    #[test]
+    fn rejects_expired_lightning_token() {
+        let signing_key = generate_keypair();
+        let signed = sign_token(
+            AccessToken::new_lightning(
+                2,
+                "event-1",
+                "payment-hash",
+                None,
+                None,
+                250_000,
+                1_700_000_000,
+                1_700_000_010,
+                "nonce-1",
+            ),
+            &signing_key,
+        )
+        .unwrap();
+
+        let err = verify_signed_token_at(&signed, &signing_key.verifying_key(), 1_700_000_010)
+            .unwrap_err();
+        assert!(matches!(err, VerifyError::Expired { .. }));
+    }
+}

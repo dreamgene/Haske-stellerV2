@@ -18,7 +18,6 @@ pub struct SessionRecord {
     pub expires_at: u64,
     pub settlement_id: Option<String>,
     pub payment_hash: Option<String>,
-    pub tx_hash: Option<String>,
     pub access_token: Option<String>,
     pub access_qr_png: Option<String>,
     pub access_qr_ascii: Option<String>,
@@ -54,7 +53,6 @@ impl PaymentService {
             paid: false,
             settlement_id: None,
             payment_hash: None,
-            tx_hash: None,
             access_token: None,
             access_qr_png: None,
             access_qr_ascii: None,
@@ -88,7 +86,6 @@ impl PaymentService {
         session.paid = true;
         session.settlement_id = Some(artifact.settlement_id);
         session.payment_hash = artifact.payment_hash;
-        session.tx_hash = artifact.tx_hash;
         session.access_token = Some(artifact.token);
         session.access_qr_png = Some(artifact.qr_png);
         session.access_qr_ascii = Some(artifact.qr_ascii);
@@ -100,7 +97,7 @@ impl PaymentService {
         let payment_request = session.payment_request.clone();
         let status = if session.access_token.is_some() {
             "confirmed"
-        } else if session.paid || session.tx_hash.is_some() {
+        } else if session.paid || session.payment_hash.is_some() {
             "detected"
         } else if payment_request.expires_at <= now {
             "expired"
@@ -114,10 +111,13 @@ impl PaymentService {
             paid: session.paid,
             request_expires_at: payment_request.expires_at,
             expires_at: session.expires_at,
-            payment_request,
             settlement_id: session.settlement_id,
             payment_hash: session.payment_hash,
-            tx_hash: session.tx_hash,
+            invoice: payment_request.invoice.clone(),
+            bolt11: payment_request.bolt11.clone(),
+            amount_msat: payment_request.amount_msat,
+            qr_payload: payment_request.qr_payload.clone(),
+            payment_request,
             access_token: session
                 .access_token
                 .map(|token| serde_json::from_str::<Value>(&token).unwrap_or(Value::String(token))),

@@ -92,9 +92,9 @@ impl PaymentProvider for LightningAdapter {
         request: CreatePaymentRequest,
     ) -> Result<PaymentRequest> {
         let amount_msat = request
-            .amount
-            .parse::<u64>()
-            .map_err(|_| anyhow!("amount must be millisatoshis for Lightning requests"))?;
+            .amount_msat
+            .or_else(|| request.amount_sats.map(|amount_sats| amount_sats * 1_000))
+            .ok_or_else(|| anyhow!("amount_msat or amount_sats is required"))?;
         let session_id = random_id(16);
         let expires_at = now_secs() + self.config.request_expiry_secs;
         let invoice = self
@@ -107,19 +107,20 @@ impl PaymentProvider for LightningAdapter {
             })
             .await?;
 
+        let bolt11 = invoice.invoice.clone();
+
         Ok(PaymentRequest {
             session_id,
             rail: "lightning".to_string(),
-            amount: invoice.amount_msat.to_string(),
             currency: "msat".to_string(),
             amount_msat: Some(invoice.amount_msat),
-            payment_request: invoice.invoice.clone(),
-            qr_payload: invoice.invoice.clone(),
-            invoice: Some(invoice.invoice),
+            amount_sats: (invoice.amount_msat % 1_000 == 0).then_some(invoice.amount_msat / 1_000),
+            payment_request: bolt11.clone(),
+            qr_payload: bolt11.clone(),
+            invoice: Some(bolt11.clone()),
+            bolt11: Some(bolt11),
             payment_hash: Some(invoice.payment_hash),
-            destination: None,
-            asset: None,
-            memo: None,
+            metadata: invoice.provider_metadata,
             expires_at,
         })
     }
@@ -153,15 +154,9 @@ impl PaymentProvider for LightningAdapter {
             payment_hash: Some(payment_hash.to_string()),
             preimage: settlement.preimage,
             invoice: Some(invoice.to_string()),
-            tx_hash: None,
-            source_account: None,
-            destination_account: None,
-            amount: request.amount.clone(),
             currency: "msat".to_string(),
             amount_msat: request.amount_msat,
-            asset: None,
-            memo: None,
-            ledger_sequence: None,
+            amount_sats: request.amount_sats,
             confirmed_at: settled_at,
             settled_at: Some(settled_at),
             provider_metadata: settlement.provider_metadata,
@@ -311,9 +306,10 @@ mod tests {
         let adapter = LightningAdapter::mock(None);
         let request = adapter
             .create_payment_request(CreatePaymentRequest {
-                amount: "250000".to_string(),
+                amount_msat: Some(250_000),
+                amount_sats: None,
                 currency: "msat".to_string(),
-                asset: String::new(),
+                metadata: Value::Null,
                 event_id: "test-event".to_string(),
             })
             .await
@@ -330,9 +326,10 @@ mod tests {
         let adapter = LightningAdapter::mock(None);
         let request = adapter
             .create_payment_request(CreatePaymentRequest {
-                amount: "250000".to_string(),
+                amount_msat: Some(250_000),
+                amount_sats: None,
                 currency: "msat".to_string(),
-                asset: String::new(),
+                metadata: Value::Null,
                 event_id: "test-event".to_string(),
             })
             .await
@@ -347,9 +344,10 @@ mod tests {
         let adapter = LightningAdapter::mock(Some(0));
         let request = adapter
             .create_payment_request(CreatePaymentRequest {
-                amount: "250000".to_string(),
+                amount_msat: Some(250_000),
+                amount_sats: None,
                 currency: "msat".to_string(),
-                asset: String::new(),
+                metadata: Value::Null,
                 event_id: "test-event".to_string(),
             })
             .await

@@ -8,6 +8,18 @@ Core promise:
 
 ## End-to-End Flow
 
+Canonical flow:
+
+```text
+Buyer Phone
+-> Bitcoin Lightning invoice payment
+-> Lightning node / Lightning provider
+-> Rust API
+-> signed access token
+-> QR encoder
+-> offline verifier CLI
+```
+
 ```text
 Buyer Phone
   |
@@ -43,7 +55,7 @@ Lightning node / Lightning provider:
 Rust API:
 - Creates payment sessions.
 - Stores invoice, `payment_hash`, amount, and expiry.
-- Checks or subscribes for invoice settlement.
+- Checks invoice status or subscribes for invoice settlement.
 - Issues signed access tokens only after settlement.
 
 QR encoder:
@@ -56,21 +68,9 @@ Offline verifier CLI:
 - Does not require a network call, user account, gate-side database, or online
   gate check.
 
-## Stellar-to-Lightning Concept Replacements
+## Lightning Settlement Fields
 
-HASKEpay documentation and product behavior should use Lightning-native terms.
-Stellar code is legacy unless explicitly requested.
-
-| Previous Stellar concept | HASKEpay Lightning concept |
-| --- | --- |
-| Horizon polling | Lightning invoice status checking or invoice subscription |
-| Stellar destination + memo | Lightning invoice + `payment_hash` |
-| `tx_hash` | `payment_hash` |
-| ledger | `settled_at` |
-| asset | `amount_msat` and invoice amount |
-| memo | invoice description or internal session metadata |
-
-Preferred Lightning settlement fields:
+HASKEpay stores and exposes Lightning-native settlement fields:
 - `payment_hash`
 - preimage, when available from the provider
 - `amount_msat`

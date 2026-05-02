@@ -24,11 +24,22 @@ Current build targets:
 - Minimal Axum API for checkout flows
 - Vite checkout UI for buyers
 
-The active API server is Lightning-first. The old Stellar adapter remains in the
-repository as legacy code during migration, but it is no longer the default
-runtime path.
+The active API server is Lightning-native and uses Lightning settlement as the
+runtime payment path.
 
 ## Architecture
+
+Canonical flow:
+
+```text
+Buyer Phone
+-> Bitcoin Lightning invoice payment
+-> Lightning node / Lightning provider
+-> Rust API
+-> signed access token
+-> QR encoder
+-> offline verifier CLI
+```
 
 ```text
 Buyer Phone
@@ -43,7 +54,7 @@ Rust API
   - creates payment sessions
   - stores invoice + payment_hash
   - checks/subscribes for invoice settlement
-  - issue signed access token
+  - issues a signed access token after confirmed settlement
   v
 Signed access token
   |
@@ -79,8 +90,7 @@ Offline components:
 - `crates/access_token`: signed access token formats and verification helpers
 - `crates/verifier_cli`: offline QR/token verifier
 
-Legacy/reference components:
-- `crates/stellar_adapter`: previous Stellar/Horizon rail
+Reference components:
 - `crates/lightning_node`: older Breez-based Lightning server path, excluded
   from the default workspace build because it requires extra native tooling such
   as `protoc`
@@ -175,22 +185,12 @@ cargo test --workspace
 cd haske-ui && npm run lint && npm run build
 ```
 
-## Migration Notes
+## Lightning Backend Notes
 
-The migration from the previous Stellar-branded build to HASKEpay is
-intentionally not a simple rename. HASKEpay is Bitcoin Lightning-native.
-
-Concept replacements:
-- Horizon polling becomes Lightning invoice status checking or invoice
-  subscription.
-- Stellar destination + memo becomes Lightning invoice + `payment_hash`.
-- `tx_hash`, ledger, asset, and memo settlement fields become `payment_hash`,
-  preimage when available, `amount_msat`, invoice, and `settled_at`.
-
-HASKEpay treats Bitcoin Lightning as the primary rail and tracks settlement
+HASKEpay treats Bitcoin Lightning as the payment rail and tracks settlement
 through Lightning invoice identity, primarily `payment_hash`.
 
 The default workspace excludes `crates/lightning_node` for now because that
-legacy crate pulls dependencies that require `protoc`. Bring it back only after
-deciding whether the production provider should be Breez, LDK node, CLN, LND, or
-a trait-backed adapter supporting several backends.
+reference crate pulls dependencies that require `protoc`. Bring it back only
+after deciding whether the production provider should be Breez, LDK node, CLN,
+LND, or a trait-backed adapter supporting several backends.

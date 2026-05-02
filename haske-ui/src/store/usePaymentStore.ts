@@ -19,9 +19,6 @@ export type PaymentData = {
   payment_request?: string
   invoice?: string | null
   payment_hash?: string | null
-  destination?: string | null
-  asset?: string | null
-  memo?: string | null
   request_expires_at?: number
   expires_at?: number
   [key: string]: unknown
@@ -38,7 +35,6 @@ export type AccessData = {
   payment_request?: PaymentData
   settlement_id?: string | null
   payment_hash?: string | null
-  tx_hash?: string | null
   access_token?: AccessToken
   access_qr_png?: string | null
   access_qr_ascii?: string | null

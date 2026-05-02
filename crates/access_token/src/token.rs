@@ -4,31 +4,22 @@ use serde::{Deserialize, Serialize};
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct AccessToken {
     pub version: u8,
-    #[serde(default)]
-    pub product: String,
-    #[serde(default)]
-    pub rail: String,
     pub event_id: String,
-    #[serde(default)]
     pub payment_hash: String,
     #[serde(default)]
     pub preimage: Option<String>,
     #[serde(default)]
+    pub invoice: Option<String>,
+    #[serde(default)]
     pub amount_msat: u64,
     #[serde(default)]
-    pub tx_hash: String,
-    #[serde(default)]
-    pub source: String,
-    #[serde(default)]
-    pub amount: String,
-    #[serde(default)]
-    pub asset: String,
-    #[serde(default)]
-    pub memo: String,
-    #[serde(default)]
-    pub ledger: u32,
+    pub settled_at: u64,
     pub expires_at: u64,
     pub nonce: String,
+    #[serde(default)]
+    pub product: String,
+    #[serde(default)]
+    pub rail: String,
 }
 
 impl AccessToken {
@@ -41,79 +32,43 @@ impl AccessToken {
     ) -> Self {
         Self {
             version,
-            product: "HASKEpay".to_string(),
-            rail: "lightning".to_string(),
             event_id: event_id.into(),
             payment_hash: payment_hash.into(),
             preimage: None,
+            invoice: None,
             amount_msat: 0,
-            tx_hash: String::new(),
-            source: String::new(),
-            amount: String::new(),
-            asset: String::new(),
-            memo: String::new(),
-            ledger: 0,
+            settled_at: 0,
             expires_at,
             nonce: nonce.into(),
-        }
-    }
-
-    pub fn new_stellar(
-        version: u8,
-        event_id: impl Into<String>,
-        tx_hash: impl Into<String>,
-        source: impl Into<String>,
-        amount: impl Into<String>,
-        asset: impl Into<String>,
-        memo: impl Into<String>,
-        ledger: u32,
-        expires_at: u64,
-        nonce: impl Into<String>,
-    ) -> Self {
-        Self {
-            version,
             product: "HASKEpay".to_string(),
-            rail: "stellar".to_string(),
-            event_id: event_id.into(),
-            payment_hash: String::new(),
-            preimage: None,
-            amount_msat: 0,
-            tx_hash: tx_hash.into(),
-            source: source.into(),
-            amount: amount.into(),
-            asset: asset.into(),
-            memo: memo.into(),
-            ledger,
-            expires_at,
-            nonce: nonce.into(),
+            rail: "lightning".to_string(),
         }
     }
 
+    #[allow(clippy::too_many_arguments)]
     pub fn new_lightning(
         version: u8,
         event_id: impl Into<String>,
         payment_hash: impl Into<String>,
         preimage: Option<String>,
+        invoice: Option<String>,
         amount_msat: u64,
+        settled_at: u64,
         expires_at: u64,
         nonce: impl Into<String>,
     ) -> Self {
         Self {
             version,
-            product: "HASKEpay".to_string(),
-            rail: "lightning".to_string(),
             event_id: event_id.into(),
             payment_hash: payment_hash.into(),
             preimage,
+            invoice,
             amount_msat,
-            tx_hash: String::new(),
-            source: String::new(),
-            amount: amount_msat.to_string(),
-            asset: "msat".to_string(),
-            memo: String::new(),
-            ledger: 0,
+            settled_at,
             expires_at,
             nonce: nonce.into(),
+            product: "HASKEpay".to_string(),
+            rail: "lightning".to_string(),
         }
     }
 
@@ -130,27 +85,5 @@ impl AccessToken {
             .collect();
 
         Self::new(version, event_id, payment_hash, expires_at, nonce)
-    }
-
-    pub fn with_random_nonce_stellar(
-        version: u8,
-        event_id: impl Into<String>,
-        tx_hash: impl Into<String>,
-        source: impl Into<String>,
-        amount: impl Into<String>,
-        asset: impl Into<String>,
-        memo: impl Into<String>,
-        ledger: u32,
-        expires_at: u64,
-    ) -> Self {
-        let nonce: String = rand::thread_rng()
-            .sample_iter(&Alphanumeric)
-            .take(16)
-            .map(char::from)
-            .collect();
-
-        Self::new_stellar(
-            version, event_id, tx_hash, source, amount, asset, memo, ledger, expires_at, nonce,
-        )
     }
 }
